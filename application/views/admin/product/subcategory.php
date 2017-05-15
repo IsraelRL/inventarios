@@ -29,9 +29,9 @@
 
                                 <!-- /.category -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Product Category <span class="required">*</span></label>
+                                    <label for="exampleInputEmail1">Categoría de producto <span class="required">*</span></label>
                                     <select name="category_id" class="form-control col-sm-5" required>
-                                        <option value="">Select Product Category</option>
+                                        <option value="">Select Categoría de producto</option>
                                         <?php if (!empty($all_category)): ?>
                                             <?php foreach ($all_category as $v_categogy) : ?>
                                                 <option value="<?php echo $v_categogy->category_id; ?>"

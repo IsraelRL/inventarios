@@ -49,7 +49,7 @@
                     <td><?php echo $product->product_note ?></td>
                 </tr>
                 <tr>
-                    <td class="col-sm-3 ">Product Category</td>
+                    <td class="col-sm-3 ">Categoría de producto</td>
                     <td class=""><?php echo $product->category_name ?></td>
                 </tr>
                 <tr>

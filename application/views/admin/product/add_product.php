@@ -19,7 +19,7 @@
             <div class="box box-primary">
 
                 <div class="box-header box-header-background with-border">
-                    <h3 class="box-title ">Add New Product</h3>
+                    <h3 class="box-title ">Agregar nuevo producto</h3>
                 </div>
                 <!-- /.box-header -->
 
@@ -95,9 +95,9 @@
 
                                         <!-- /.Category -->
                                         <div class="form-group">
-                                            <label>Product Category</label>
+                                            <label>Categoría de producto</label>
                                             <select name="category_id" class="form-control col-sm-5" id="category" onchange="get_category(this.value)">
-                                                <option value="">Select Product Category</option>
+                                                <option value="">Select Categoría de producto</option>
                                                 <?php if (!empty($category)): ?>
                                                     <?php foreach ($category as $v_category) : ?>
                                                         <option value="<?php echo $v_category->category_id; ?>"

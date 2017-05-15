@@ -77,12 +77,12 @@ class Product extends Admin_Controller
         if (!empty($check_category)) { // if exist
 
             $type = 'error';
-            $message = 'Product Category Information Already Exist';
+            $message = 'Categoría de producto Information Already Exist';
         } else { // save and update query
             $this->product_model->save($data, $id); //save and update
             // massage for employee
             $type = 'success';
-            $message = 'Product Category Information Successfully Saved';
+            $message = 'Categoría de producto Information Successfully Saved';
         }
 
         //redirect users to view page
@@ -107,7 +107,7 @@ class Product extends Admin_Controller
             $this->product_model->delete($id);
 
             $type = 'success';
-            $message = 'Product Category Information Successfully Delete ';
+            $message = 'Categoría de producto Information Successfully Delete ';
         }
 
         //redirect users to view page

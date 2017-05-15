@@ -45,7 +45,7 @@
                                 <th class="active">Image</th>
                                 <th class="active">Code</th>
                                 <th class="active">Product Name</th>
-                                <th class="active">Product Category</th>
+                                <th class="active">Categoría de producto</th>
                                 <th class="active">Stock Available</th>
                                 <th class="active">Status</th>
                                 <th class="active">Action</th>
