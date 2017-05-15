@@ -18,7 +18,7 @@
                         }
                         ?>
                     </h2>
-                    <p>Revenue</p>
+                    <p>Ingresos</p>
                 </div>
                 <div class="icon">
                     <i class="fa fa-bar-chart-o"></i>
@@ -42,7 +42,7 @@
                         }
                         ?>
                     </h2>
-                    <p> Profit</p>
+                    <p> Utilidades</p>
                 </div>
                 <div class="icon">
                     <i class="fa fa-money"></i>
@@ -57,7 +57,7 @@
             <div class="small-box bg-info">
                 <div class="inner">
                     <h2><?php echo $quantity_sales ?></h2>
-                    <p>Quantity of Sales</p>
+                    <p>Cantidad de ventas</p>
                 </div>
                 <div class="icon">
                     <i class="fa fa-shopping-cart"></i>
@@ -72,13 +72,13 @@
             <div class="small-box bg-success">
                 <div class="inner">
                     <h2><?php echo $this->localization->currencyFormat($stock_value); ?></h2>
-                    <p>Value of Stock</p>
+                    <p>Valor de la mercancía en stock</p>
                 </div>
                 <div class="icon">
                     <i class="fa fa-suitcase"></i>
                 </div>
             <span class="small-box-footer">
-              Cost of All Items Held in Stock
+              Valor de artículos en stock
             </span>
             </div>
         </div><!-- ./col -->
@@ -90,7 +90,7 @@
             <div class="portlet"><!-- /primary heading -->
                 <div class="portlet-heading">
                     <h3 class="portlet-title text-dark text-uppercase">
-                        Yearly Sales Report
+                        Reporte anual de ventas
                     </h3>
                 </div>
                 <div id="portlet1" class="panel-collapse collapse in">
@@ -108,7 +108,7 @@
                                     }
                                     ?>
                                 </h4>
-                                <small class="text-muted"> Today's Sales</small>
+                                <small class="text-muted"> Ventas del día</small>
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-12">
                                 <h4>
@@ -120,7 +120,7 @@
                                     }
                                     ?>
                                 </h4>
-                                <small class="text-muted">This Week's Sales</small>
+                                <small class="text-muted">Ventas de la semana</small>
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-12">
                                 <h4>
@@ -132,7 +132,7 @@
                                     }
                                     ?>
                                 </h4>
-                                <small class="text-muted">This Month's Sales</small>
+                                <small class="text-muted">Ventas del mes</small>
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-12">
 
@@ -145,7 +145,7 @@
                                     }
                                     ?>
                                 </h4>
-                                <small class="text-muted">This Year's Sales</small>
+                                <small class="text-muted">Ventas del año</small>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
             <div class="portlet"><!-- /primary heading -->
                 <div class="portlet-heading">
                     <h3 class="portlet-title text-dark text-uppercase">
-                        Top <strong>5</strong> Selling Product <strong><?php echo date(Y)?></strong>
+                        Los <strong>5</strong> mejor vendidos <strong><?php echo date(Y)?></strong>
                     </h3>
                 </div>
                 <div id="portlet2" class="panel-collapse collapse in">
@@ -170,9 +170,9 @@
                                 <thead>
                                 <tr>
                                     <th>Sl</th>
-                                    <th>Barcode</th>
-                                    <th>Product Name</th>
-                                    <th>Qty</th>
+                                    <th>Código</th>
+                                    <th>Nombre</th>
+                                    <th>Cantidad</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -223,7 +223,7 @@
             <div class="portlet"><!-- /primary heading -->
                 <div class="portlet-heading">
                     <h3 class="portlet-title text-dark text-uppercase">
-                        Recent Orders
+                        Órdenes recientes
                     </h3>
                 </div>
                 <div id="portlet2" class="panel-collapse collapse in">
@@ -232,11 +232,11 @@
                             <table class="table no-margin">
                                 <thead>
                                 <tr>
-                                    <th>Order ID</th>
-                                    <th>Customer</th>
-                                    <th>Date</th>
-                                    <th>Status</th>
-                                    <th>Order Total</th>
+                                    <th>ID de la orden</th>
+                                    <th>Cliente</th>
+                                    <th>Fecha</th>
+                                    <th>Estatus</th>
+                                    <th>Total de la orden</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -248,11 +248,11 @@
                                         <td><?php echo $this->localization->dateFormat($v_order->order_date) ?></td>
                                         <td>
                                             <?php if($v_order->order_status == 0){ ?>
-                                                <span class="label label-warning">PENDING</span>
+                                                <span class="label label-warning">PENDIENTE</span>
                                             <?php }elseif($v_order->order_status == 1){ ?>
-                                                <span class="label label-danger">CANCEL</span>
+                                                <span class="label label-danger">CANCELAR</span>
                                             <?php }else { ?>
-                                                <span class="label label-info">CONFIRM</span>
+                                                <span class="label label-info">CONFIRMAR</span>
                                             <?php }?>
 
                                         </td>
@@ -261,7 +261,7 @@
                                 <?php endforeach;
                                 else:?>
                                     <tr style="column-span: 5">
-                                        <td><strong>No Records Found</strong></td>
+                                        <td><strong>No hay registros</strong></td>
                                     </tr>
 
                                 <?php endif ?>
@@ -278,7 +278,7 @@
             <div class="portlet"><!-- /primary heading -->
                 <div class="portlet-heading">
                     <h5 class="portlet-title text-dark text-uppercase">
-                        Top 5 Selling Product <?php echo date(F)?>
+                        Los 5 más vendidos <?php echo date(F)?>
                     </h5>
                 </div>
                 <div id="portlet2" class="panel-collapse collapse in">
@@ -288,9 +288,9 @@
                                 <thead>
                                 <tr>
                                     <th>Sl</th>
-                                    <th>Barcode</th>
-                                    <th>Product Name</th>
-                                    <th>Qty</th>
+                                    <th>Cód. barras</th>
+                                    <th>Nombre</th>
+                                    <th>Cant.</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -357,7 +357,7 @@
             ],
             xkey: 'x',
             ykeys: ['a', 'b', 'c'],
-            labels: ['Revenue', 'Profit', 'Purchase'],
+            labels: ['Ingresos', 'Utilidades', 'Purchase'],
             barColors: ['#3bc0c3', '#1a2942', '#5F5AAB']
         });
 

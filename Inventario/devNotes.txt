@@ -1,0 +1,3 @@
+NOTAS:
+
+- para fines del sistema, Revenue se traduce como Ingresos, Profit como utilidades

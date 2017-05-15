@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>Installation | Easy Inventory</title>
+    <title>Installation | Git Inventarios</title>
     <link href="<?php echo base_url(); ?>asset/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url(); ?>asset/css/admin.css" rel="stylesheet" type="text/css" />
 </head>
@@ -19,7 +19,7 @@
 
             <div class="box">
                 <div class="box-header box-header-background with-border">
-                    <h3 class="box-title">Easy Inventory | Create User Login</h3>
+                    <h3 class="box-title">Git Inventarios | Create User Login</h3>
 
                 </div><!-- /.box-header -->
                 <div class="box-body">
@@ -29,7 +29,7 @@
 
                     <div class="callout callout-success">
                         <h3>Sparking!</h3>
-                        <h4>Easy Inventory Successfully Installed.</h4>
+                        <h4>Git Inventarios Successfully Installed.</h4>
                     </div>
 
                     <h4>Create Login Details</h4>

@@ -14,20 +14,20 @@ if (!empty($error)) {
 
 <div class="login-box">
     <div class="login-logo animated fadeInDown" data-animation="fadeInDown">
-        <a href="<?php echo base_url() ?>"><b>Easy</b>Inventory </a>
+        <a href="<?php echo base_url() ?>"><b>GIT</b>Inventarios</a>
     </div><!-- /.login-logo -->
     <div class="login-box-body  animated fadeInUp" data-animation="fadeInUp">
-        <p class="login-box-msg">Sign in to start your session</p>
+        <p class="login-box-msg">Entre sus datos para iniciar sesión</p>
 
             <?php echo form_open('login');?>
             <?php echo validation_errors(); ?>
             <?php echo $this->session->flashdata('error'); ?>
             <div class="form-group has-feedback">
-                <input type="text" name="user_name" class="form-control" placeholder="Username" required="required" />
+                <input type="text" name="user_name" class="form-control" placeholder="Nombre de usuario" required="required" />
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                <input type="password" name="password" class="form-control" placeholder="Password" required="required" />
+                <input type="password" name="password" class="form-control" placeholder="Contraseña" required="required" />
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
@@ -43,7 +43,7 @@ if (!empty($error)) {
 
 
 
-        <a href="<?php echo base_url()?>forget_password">I forgot my password</a><br>
+        <a href="<?php echo base_url()?>forget_password">¡Olvidé mi contraseña!</a><br>
 
     </div><!-- /.login-box-body -->
 </div><!-- /.login-box -->

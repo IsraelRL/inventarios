@@ -8,7 +8,7 @@ if (!defined('BASEPATH')) {
  *	@author : CodesLab
  *  @support: support@codeslab.net
  *	date	: 05 June, 2015
- *	Easy Inventory
+ *	Git Inventarios
  *	http://www.codeslab.net
  *  version: 1.0
  */
@@ -77,7 +77,7 @@ class Dashboard_Model extends MY_Model
     /***  create view yearly report by start date to end date  ***/
     public function get_all_report_by_date($start_date, $end_date)
     {
-        //Revenue
+        //Ingresos
         $this->db->select('tbl_invoice.*', false);
         $this->db->select_sum('tbl_order.grand_total', false);
         $this->db->from('tbl_invoice');
@@ -87,7 +87,7 @@ class Dashboard_Model extends MY_Model
         $query_result = $this->db->get();
         $result = $query_result->result();
 
-        //Profit Calculation
+        //Utilidades Calculation
         $this->db->select('tbl_invoice.*', false);
         $this->db->select('tbl_order.*', false);
         $this->db->from('tbl_invoice');

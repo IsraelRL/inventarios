@@ -64,7 +64,7 @@ session_start();
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<title>Install | Easy Inventory</title>
+		<title>Install | Git Inventarios</title>
 
 		<link rel="stylesheet" href="../asset/css/admin.css">
 		<link rel="stylesheet" href="../asset/css/bootstrap.css">
@@ -92,7 +92,7 @@ session_start();
 
             <div class="box">
                 <div class="box-header box-header-background with-border">
-                    <h3 class="box-title">Easy Inventory Installation</h3>
+                    <h3 class="box-title">Git Inventarios Installation</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
 

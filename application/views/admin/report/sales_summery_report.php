@@ -74,7 +74,7 @@
                                 <th class="active">Tax</th>
                                 <th class="active">Discount</th>
                                 <th class="active">Grand Total</th>
-                                <th class="active">Profit</th>
+                                <th class="active">Utilidades</th>
 
                             </tr>
                             </thead><!-- / Table head -->

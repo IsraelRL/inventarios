@@ -10,7 +10,7 @@ session_start();
  *	@author : CodesLab
  *  @support: support@codeslab.net
  *	date	: 05 June, 2015
- *	Easy Inventory
+ *	Git Inventarios
  *	http://www.codeslab.net
  *  version: 1.0
  */

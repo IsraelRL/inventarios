@@ -10578,7 +10578,7 @@
 		 *
 		 * This parameter allows you to override the default function which obtains
 		 * the data from the server so something more suitable for your application.
-		 * For example you could use POST data, or pull information from a Gears or
+		 * For example you could use POST data, or pull information from a Opcioness or
 		 * AIR database.
 		 *  @type function
 		 *  @member

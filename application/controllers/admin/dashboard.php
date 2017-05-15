@@ -8,7 +8,7 @@ if (!defined('BASEPATH')) {
  *	@author : CodesLab
  *  @support: support@codeslab.net
  *	date	: 05 June, 2015
- *	Easy Inventory
+ *	Git Inventarios
  *	http://www.codeslab.net
  *  version: 1.0
  */
@@ -128,7 +128,7 @@ class Dashboard extends Admin_Controller
         }
 
 
-        $data['title'] = 'Easy Inventory - Dashboard'; // title
+        $data['title'] = 'Git Inventarios - Dashboard'; // title
         $data['subview'] = $this->load->view('admin/dashboard', $data, true); // sub view
         $this->load->view('admin/_layout_main', $data); // main page
     }

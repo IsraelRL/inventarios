@@ -6,7 +6,7 @@
 
 <div class="login-box retrive-password">
     <div class="login-logo animated fadeInDown" data-animation="fadeInDown">
-        <a href="<?php echo base_url() ?>"><b>Easy</b>Inventory </a>
+        <a href="<?php echo base_url() ?>"><b>GIT</b>Inventarios</a>
     </div><!-- /.login-logo -->
 
     <div class="login-box-body  animated fadeInUp" data-animation="fadeInUp">

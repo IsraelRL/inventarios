@@ -199,7 +199,7 @@
                                         ?>
                                         <tr>
                                             <td colspan="4"></td>
-                                            <td colspan="2">Profit</td>
+                                            <td colspan="2">Utilidades</td>
                                             <td><?php echo $this->localization->currencyFormat($profit) ?></td>
                                         </tr>
                                         </tfoot>
@@ -216,8 +216,8 @@
                                         <thead>
                                         <tr style="background-color: #ccc">
                                             <th class="no text-right">Total Cost</th>
-                                            <th class="no text-right">Total Revenue</th>
-                                            <th class="no text-right">Total Profit</th>
+                                            <th class="no text-right">Total Ingresos</th>
+                                            <th class="no text-right">Total Utilidades</th>
                                         </tr>
                                         </thead>
                                         <tbody style="background-color: #c5c5c5">

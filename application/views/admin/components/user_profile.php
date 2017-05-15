@@ -1,7 +1,7 @@
 
         <header class="main-header">
         <!-- Logo -->
-        <a href="<?php echo base_url(); ?>" class="logo"><b>Easy</b>Inventory</a>
+        <a href="<?php echo base_url(); ?>" class="logo"><b>GIT</b>Inventarios</a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
           <!-- Sidebar toggle button-->
@@ -14,7 +14,7 @@
               <ul class="nav navbar-nav">
                   <li class="dropdown mega-dropdown">
 
-                      <a href="#" class="dropdown-toggle " data-toggle="dropdown" style="font-size: 18px">Gear <i class="fa fa-cog" aria-hidden="true"></i></a>
+                      <a href="#" class="dropdown-toggle " data-toggle="dropdown" style="font-size: 18px">Opciones <i class="fa fa-cog" aria-hidden="true"></i></a>
 
 
                       <ul class="dropdown-menu mega-dropdown-menu row  ">
@@ -54,11 +54,11 @@
 
                           <li class="col-sm-3">
                               <ul>
-                                  <li class="dropdown-header">Manage Purchase</li>
-                                  <li><a href="<?php echo site_url('admin/purchase/add_supplier') ?>"><spna style="color: #00a7d0"><i class="fa fa-plus" aria-hidden="true"></i></spna> Add Supplier</a></li>
-                                  <li><a href="<?php echo site_url('admin/purchase/manage_supplier') ?>"><spna style="color: #00a7d0"><i class="glyphicon glyphicon-briefcase" aria-hidden="true"></i></spna> Manage Supplier</a></li>
-                                  <li><a href="<?php echo site_url('admin/purchase/new_purchase') ?>"><spna style="color: #00a7d0"><i class="fa fa-shopping-cart" aria-hidden="true"></i></spna> New Purchase</a></li>
-                                  <li><a href="<?php echo site_url('admin/purchase/purchase_list') ?>"><spna style="color: #00a7d0"><i class="glyphicon glyphicon-th-list" aria-hidden="true"></i></spna> Purchase History</a></li>
+                                  <li class="dropdown-header">Manejar compras</li>
+                                  <li><a href="<?php echo site_url('admin/purchase/add_supplier') ?>"><spna style="color: #00a7d0"><i class="fa fa-plus" aria-hidden="true"></i></spna> Agregar proveedor</a></li>
+                                  <li><a href="<?php echo site_url('admin/purchase/manage_supplier') ?>"><spna style="color: #00a7d0"><i class="glyphicon glyphicon-briefcase" aria-hidden="true"></i></spna> Administrar proveedores</a></li>
+                                  <li><a href="<?php echo site_url('admin/purchase/new_purchase') ?>"><spna style="color: #00a7d0"><i class="fa fa-shopping-cart" aria-hidden="true"></i></spna> Nueva compra</a></li>
+                                  <li><a href="<?php echo site_url('admin/purchase/purchase_list') ?>"><spna style="color: #00a7d0"><i class="glyphicon glyphicon-th-list" aria-hidden="true"></i></spna> Historial de compras</a></li>
                               </ul>
                           </li>
 
@@ -190,7 +190,7 @@
 
                     <li>
                         <a href="<?php echo base_url()?>login/logout" >
-                            <span class="glyphicon glyphicon-off"></span> Logout
+                            <span class="glyphicon glyphicon-off"></span> Cerrar sesión
                         </a>
 
                     </li>

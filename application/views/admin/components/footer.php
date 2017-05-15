@@ -1,7 +1,7 @@
  
 <footer class="main-footer">
       
-        <strong>Copyright &copy; <?php echo date("Y") ?> <a href="http://codeslab.net">codeslab.net</a>.</strong> All rights reserved.
+        <strong>Derechos Reservados &copy; <?php echo date("Y") ?> <a href="http://gente21.com/">GIT - Gente21</a>.</strong>
       </footer>
       
  </div><!-- ./wrapper -->

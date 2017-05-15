@@ -377,7 +377,7 @@ table tfoot tr td:first-child {
             ?>
             <tr>
                 <td colspan="4"></td>
-                <td class="total" colspan="2">Profit</td>
+                <td class="total" colspan="2">Utilidades</td>
                 <td><?php echo $this->localization->currencyFormat($profit) ?></td>
             </tr>
             </tfoot>
@@ -400,8 +400,8 @@ table tfoot tr td:first-child {
         <thead>
             <tr style="background-color: #ECECEC">
                 <th align="right">Total Cost</th>
-                <th align="right">Total Revenue</th>
-                <th align="right">Total Profit</th>
+                <th align="right">Total Ingresos</th>
+                <th align="right">Total Utilidades</th>
             </tr>
         </thead>
         <tbody>
