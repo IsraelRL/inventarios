@@ -71,8 +71,8 @@
 
                                 <!-- /.Phone -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Phone</label>
-                                    <input type="text" placeholder="Phone" name="phone" onchange="check_phone(this.value)"
+                                    <label for="exampleInputEmail1">Teléfono</label>
+                                    <input type="text" placeholder="Teléfono" name="phone" onchange="check_phone(this.value)"
                                            value="<?php
                                            if (!empty($customer->phone)) {
                                                echo $customer->phone;
@@ -96,7 +96,7 @@
 
                                 <!-- /.Address -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Address <span class="required">*</span></label>
+                                    <label for="exampleInputEmail1">Dirección <span class="required">*</span></label>
                                     <textarea name="address" class="form-control autogrow"
                                               placeholder="Address" rows="5"><?php
                                         if (!empty($customer->address)) {

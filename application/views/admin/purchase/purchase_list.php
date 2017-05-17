@@ -20,7 +20,7 @@ if(!empty($info->currency))
 
             <div class="box box-primary">
                 <div class="box-header box-header-background with-border">
-                        <h3 class="box-title ">Purchase History</h3>
+                        <h3 class="box-title ">Historial de compras</h3>
                 </div>
 
 
@@ -32,12 +32,12 @@ if(!empty($info->currency))
                         <thead ><!-- Table head -->
                         <tr>
                             <th class="active">Sl</th>
-                            <th class="active">Purchase No.</th>
-                            <th class="active">Supplier Name</th>
-                            <th class="active">Purchase Date</th>
-                            <th class="active">Grand Total</th>
-                            <th class="active">Purchase By</th>
-                            <th class="active">Action</th>
+                            <th class="active">No. de compra</th>
+                            <th class="active">Nombre del proveedor</th>
+                            <th class="active">Fecha de compra</th>
+                            <th class="active">Total general</th>
+                            <th class="active">Comprar por</th>
+                            <th class="active">Acción</th>
 
                         </tr>
                         </thead><!-- / Table head -->
@@ -68,7 +68,7 @@ if(!empty($info->currency))
                             ?><!--get all sub category if not this empty-->
                         <?php else : ?> <!--get error message if this empty-->
                             <td colspan="6">
-                                <strong>There is no record for display</strong>
+                                <strong>No hay registro para la visualización</strong>
                             </td><!--/ get error message if this empty-->
                         <?php endif; ?>
                         </tbody><!-- / Table body -->

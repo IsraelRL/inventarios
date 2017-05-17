@@ -28,7 +28,7 @@
 
                             <div class="box-body">
 
-                                <!-- /.Company Name -->
+                                <!-- /.Nombre de la empresa -->
                                 <div class="form-group">
                                     <label>Timezone</label>
                                     <select style="width: 100%;" title="Timezone" tabindex="-1" name="timezone" id="e2">

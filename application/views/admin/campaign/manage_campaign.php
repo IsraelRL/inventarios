@@ -26,7 +26,7 @@
                                 <th class="active">Email Subject</th>
                                 <th class="active">Create Date</th>
                                 <th class="active">Created by</th>
-                                <th class="active ">Action</th>
+                                <th class="active ">Acción</th>
 
                             </tr>
                             </thead><!-- / Table head -->
@@ -62,7 +62,7 @@
                             ?><!--get all sub category if not this empty-->
                             <?php else : ?> <!--get error message if this empty-->
                                 <td colspan="6">
-                                    <strong>There is no record for display</strong>
+                                    <strong>No hay registro para la visualización</strong>
                                 </td><!--/ get error message if this empty-->
                             <?php endif; ?>
                             </tbody><!-- / Table body -->

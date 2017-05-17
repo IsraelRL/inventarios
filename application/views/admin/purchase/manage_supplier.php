@@ -10,7 +10,7 @@
 
             <div class="box box-primary ">
                 <div class="box-header box-header-background with-border">
-                        <h3 class="box-title ">Manage Supplier</h3>
+                        <h3 class="box-title ">Administrar Proveedor</h3>
                 </div>
 
 
@@ -21,12 +21,12 @@
                             <thead ><!-- Table head -->
                             <tr>
                                 <th class="active col-sm-1 ">Sl</th>
-                                <th class="active">Company Name</th>
-                                <th class="active">Supplier Name</th>
+                                <th class="active">Nombre de la empresa</th>
+                                <th class="active">Nombre del proveedor</th>
                                 <th class="active">Email</th>
-                                <th class="active">Phone</th>
+                                <th class="active">Teléfono</th>
 
-                                <th class="active">Action</th>
+                                <th class="active">Acción</th>
 
                             </tr>
                             </thead><!-- / Table head -->
@@ -58,7 +58,7 @@
                             ?><!--get all sub category if not this empty-->
                             <?php else : ?> <!--get error message if this empty-->
                                 <td colspan="6">
-                                    <strong>There is no record for display</strong>
+                                    <strong>No hay registro para la visualización</strong>
                                 </td><!--/ get error message if this empty-->
                             <?php endif; ?>
                             </tbody><!-- / Table body -->

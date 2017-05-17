@@ -23,7 +23,7 @@
                             <th class="active">Name</th>
                             <th class="col-sm-1 active">Login</th>
                             <th class="col-sm-1 active">User Type</th>
-                            <th class="col-sm-2 active">Action</th>
+                            <th class="col-sm-2 active">Acción</th>
 
                         </tr>
                         </thead><!-- / Table head -->
@@ -48,7 +48,7 @@
                             ?>
                         <?php else : ?>
                             <td colspan="3">
-                                <strong>There is no data to display</strong>
+                                <strong>No hay datos para mostrar</strong>
                             </td>
                         <?php endif; ?>
                         </tbody><!-- / Table body -->

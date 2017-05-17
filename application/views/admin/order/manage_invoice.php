@@ -11,7 +11,7 @@
 
             <div class="box box-primary ">
                 <div class="box-header box-header-background with-border">
-                        <h3 class="box-title ">Manage Invoice</h3>
+                        <h3 class="box-title ">Administrar factura</h3>
                 </div>
 
 
@@ -31,7 +31,7 @@
                                 <th class="active">Customer</th>
                                 <th class="active">Payment Method</th>
                                 <th class="active">Order Total</th>
-                                <th class="active">Action</th>
+                                <th class="active">Acción</th>
 
                             </tr>
                             </thead><!-- / Table head -->
@@ -79,7 +79,7 @@
                             ?><!--get all sub category if not this empty-->
                             <?php else : ?> <!--get error message if this empty-->
                                 <td colspan="8">
-                                    <strong>There is no record for display</strong>
+                                    <strong>No hay registro para la visualización</strong>
                                 </td><!--/ get error message if this empty-->
                             <?php endif; ?>
                             </tbody><!-- / Table body -->

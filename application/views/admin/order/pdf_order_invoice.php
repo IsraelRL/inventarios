@@ -81,7 +81,7 @@
         <th style="padding:20px">Sl</th>
         <th style="padding:20px">Description</th>
         <th>UNIT</th>
-        <th style="width: 50px">Qty</th>
+        <th style="width: 50px">Cantidad</th>
         <th style="width: 100px">TOTAL</th>
     </tr>
 

@@ -10,7 +10,7 @@
 
             <div class="box box-primary">
                 <div class="box-header box-header-background with-border">
-                        <h3 class="box-title ">Product Sub Category</h3>
+                        <h3 class="box-title ">Subcategoría del producto</h3>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-background">
@@ -31,7 +31,7 @@
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Categoría de producto <span class="required">*</span></label>
                                     <select name="category_id" class="form-control col-sm-5" required>
-                                        <option value="">Select Categoría de producto</option>
+                                        <option value="">Selecciona la Categoría del producto</option>
                                         <?php if (!empty($all_category)): ?>
                                             <?php foreach ($all_category as $v_categogy) : ?>
                                                 <option value="<?php echo $v_categogy->category_id; ?>"
@@ -52,8 +52,8 @@
 
                                 <!-- /.subcategory -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Product Subcategory <span class="required">*</span></label>
-                                    <input type="text" required name="subcategory_name" placeholder="Subcategory"
+                                    <label for="exampleInputEmail1">Subcategoría del producto <span class="required">*</span></label>
+                                    <input type="text" required name="subcategory_name" placeholder="Subcategoría"
                                            value="<?php
                                            if (!empty($sub_category_info->subcategory_name)) {
                                                echo $sub_category_info->subcategory_name;
@@ -63,7 +63,7 @@
                                 </div>
                                 <!-- /.subcategory -->
 
-                                <button type="submit" class="btn bg-navy btn-flat" type="submit">Save Subcategory
+                                <button type="submit" class="btn bg-navy btn-flat" type="submit">Guardar subcategoria
                                 </button><br/><br/>
 
 
@@ -85,9 +85,9 @@
                             <thead ><!-- Table head -->
                             <tr>
                                 <th class="col-sm-1 active">SL</th>
-                                <th class="active">Category</th>
-                                <th class="active">Sub Category</th>
-                                <th class="col-sm-1 active">Action</th>
+                                <th class="active">Categoría</th>
+                                <th class="active">Subcategoría</th>
+                                <th class="col-sm-1 active">Acción</th>
 
                             </tr>
                             </thead><!-- / Table head -->
@@ -112,7 +112,7 @@
                             ?><!--get all sub category if not this empty-->
                             <?php else : ?> <!--get error message if this empty-->
                                 <td colspan="4">
-                                    <strong>There is no data to display</strong>
+                                    <strong>No hay datos para mostrar</strong>
                                 </td><!--/ get error message if this empty-->
                             <?php endif; ?>
                             </tbody><!-- / Table body -->

@@ -23,7 +23,7 @@
     </div>
 
     <div class="form-group">
-        <label for="exampleInputEmail1">Address <span class="required">*</span></label>
+        <label for="exampleInputEmail1">Dirección <span class="required">*</span></label>
         <textarea name="address" class="form-control autogrow" id="field-ta" placeholder="Address"></textarea>
     </div>
 

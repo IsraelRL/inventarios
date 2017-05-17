@@ -37,15 +37,15 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td class="col-sm-3">Product Code</td>
+                    <td class="col-sm-3">Código del producto</td>
                     <td><?php echo $product->product_code ?></td>
                 </tr>
                 <tr>
-                    <td class="col-sm-3 ">Product Name</td>
+                    <td class="col-sm-3 ">Nombre del producto</td>
                     <td class=""><?php echo $product->product_name ?></td>
                 </tr>
                 <tr>
-                    <td class="col-sm-3">Product Note</td>
+                    <td class="col-sm-3">Nota del producto</td>
                     <td><?php echo $product->product_note ?></td>
                 </tr>
                 <tr>
@@ -164,7 +164,7 @@
     <div class="modal-footer" >
 
             <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-            <a href="<?php echo base_url(); ?>admin/product/add_product/<?php echo $product_id ?>" type="button" class="btn btn-primary">Edit Product</a>
+            <a href="<?php echo base_url(); ?>admin/product/add_product/<?php echo $product_id ?>" type="button" class="btn btn-primary">Edit Producto</a>
 
         </div>
 

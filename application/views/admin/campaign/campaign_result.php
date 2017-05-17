@@ -48,7 +48,7 @@
                             ?><!--get all sub category if not this empty-->
                             <?php else : ?> <!--get error message if this empty-->
                                 <td colspan="6">
-                                    <strong>There is no record for display</strong>
+                                    <strong>No hay registro para la visualización</strong>
                                 </td><!--/ get error message if this empty-->
                             <?php endif; ?>
                             </tbody><!-- / Table body -->

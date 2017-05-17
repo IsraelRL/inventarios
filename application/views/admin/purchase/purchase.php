@@ -23,7 +23,7 @@ if(!empty($info->currency))
 
         <div class="portlet-heading">
             <h3 class="portlet-title text-dark text-uppercase">
-                Purchase Product
+                Comprar producto
             </h3>
            <div class="pull-right">
                <h1 class="portlet-title text-dark text-uppercase">
@@ -40,7 +40,7 @@ if(!empty($info->currency))
 
                         <div class="box box-warning">
                             <div class="box-header box-header-background-light with-border">
-                                <h3 class="box-title ">Select Product</h3>
+                                <h3 class="box-title ">Seleccionar producto</h3>
                             </div>
 
 
@@ -51,10 +51,10 @@ if(!empty($info->currency))
                                     <thead ><!-- Table head -->
                                     <tr>
                                         <th class="active col-sm-1">Sl</th>
-                                        <th class="active">Product Code</th>
-                                        <th class="active">Product Name</th>
-                                        <th class="active">Inventory</th>
-                                        <th class="active">Purchase</th>
+                                        <th class="active">Código del producto</th>
+                                        <th class="active">Nombre del producto</th>
+                                        <th class="active">Inventario</th>
+                                        <th class="active">Compra</th>
 
                                     </tr>
                                     </thead><!-- / Table head -->
@@ -93,7 +93,7 @@ if(!empty($info->currency))
                                         ?><!--get all sub category if not this empty-->
                                     <?php else : ?> <!--get error message if this empty-->
                                         <td colspan="6">
-                                            <strong>There is no record for display</strong>
+                                            <strong>No hay registro para la visualización</strong>
                                         </td><!--/ get error message if this empty-->
                                     <?php endif; ?>
 
@@ -112,7 +112,7 @@ if(!empty($info->currency))
                         <form method="post" action="<?php echo base_url() ?>admin/purchase/save_purchase">
                             <div class="box box-info">
                                 <div class="box-header box-header-background-light with-border">
-                                    <h3 class="box-title  ">Purchase Order</h3>
+                                    <h3 class="box-title  ">Orden de compra</h3>
                                 </div>
 
                                 <div class="box-background">
@@ -120,10 +120,10 @@ if(!empty($info->currency))
 
                                             <div class="col-md-6">
 
-                                                <label>Supplier</label>
+                                                <label>Proveedor</label>
                                                 <select class="form-control" name="supplier_id" required>
 
-                                                    <option value="">Select Supplier</option>
+                                                    <option value="">Seleccione el proveedor</option>
 
                                                     <?php foreach($supplier as $v_supplier):?>
                                                         <option value="<?php echo $v_supplier->supplier_id; ?>"><?php echo $v_supplier->company_name; ?></option>
@@ -131,7 +131,7 @@ if(!empty($info->currency))
                                                 </select>
                                             </div>
                                             <div class="col-md-6">
-                                                <label>Date</label>
+                                                <label>Fecha</label>
                                                 <div class="input-group">
                                                     <input type="text" class="form-control datepicker" name="purchase_date" data-format="yyyy/mm/dd" value="<?php echo date("Y/ m/ d");?>" disabled>
                                                 </div>
@@ -214,7 +214,7 @@ if(!empty($info->currency))
             messages: {
 
                 product_name: {
-                    required: "Please enter Product Name"
+                    required: "Introduzca el nombre del producto"
                 }
 
 

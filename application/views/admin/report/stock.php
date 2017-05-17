@@ -22,9 +22,9 @@
                             <tr>
                                 <th class="active col-sm-1">Sl</th>
                                 <th class="active">Sku</th>
-                                <th class="active">Product</th>
-                                <th class="active">Cost</th>
-                                <th class="active">Qty in Hand</th>
+                                <th class="active">Producto</th>
+                                <th class="active">Costo</th>
+                                <th class="active">Cantidad en mano</th>
                                 <th class="active">Stock Value</th>
 
 
@@ -49,7 +49,7 @@
                             ?><!--get all sub category if not this empty-->
                             <?php else : ?> <!--get error message if this empty-->
                                 <td colspan="6">
-                                    <strong>There is no record for display</strong>
+                                    <strong>No hay registro para la visualización</strong>
                                 </td><!--/ get error message if this empty-->
                             <?php endif; ?>
                             </tbody><!-- / Table body -->

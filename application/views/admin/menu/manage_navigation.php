@@ -33,7 +33,7 @@
                         <th>Icon</th>
                         <th>Parent</th>                                             
                         <th>Sort</th>
-                        <th class="">Action</th>
+                        <th class="">Acción</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -25,10 +25,10 @@
 
                             <div class="box-body">
 
-                                <!-- /.Company Name -->
+                                <!-- /.Nombre de la empresa -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Company Name <span class="required">*</span></label>
-                                    <input type="text" name="company_name" placeholder="Company Name" required
+                                    <label for="exampleInputEmail1">Nombre de la empresa <span class="required">*</span></label>
+                                    <input type="text" name="company_name" placeholder="Nombre de la empresa" required
                                            value="<?php
                                            if (!empty($business_info->company_name)) {
                                                echo $business_info->company_name;
@@ -52,7 +52,7 @@
 
                                 <!-- /.Address -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Address <span class="required">*</span></label>
+                                    <label for="exampleInputEmail1">Dirección <span class="required">*</span></label>
                                     <textarea name="address" class="form-control autogrow" id="field-ta" required
                                               placeholder="Business Address"><?php
                                         if (!empty($business_info->address)) {
@@ -63,8 +63,8 @@
 
                                 <!-- /.Phone -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Phone</label>
-                                    <input type="text" placeholder="Phone" name="phone"
+                                    <label for="exampleInputEmail1">Teléfono</label>
+                                    <input type="text" placeholder="Teléfono" name="phone"
                                            value="<?php
                                            if (!empty($business_info->phone)) {
                                                echo $business_info->phone;

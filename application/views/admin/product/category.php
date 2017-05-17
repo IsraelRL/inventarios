@@ -29,10 +29,10 @@
 
                         <div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
 
-                                <!-- /.Company Name -->
+                                <!-- /.Nombre de la empresa -->
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Categoría de producto <span class="required">*</span></label>
-                                    <input type="text" required name="category_name" placeholder="Category Name"
+                                    <input type="text" required name="category_name" placeholder="Nombre de categoría"
                                            value="<?php
                                            if (!empty($category_info->category_name)) {
                                                echo $category_info->category_name;
@@ -41,7 +41,7 @@
                                            class="form-control">
                                 </div>
 
-                                <button type="submit" class="btn bg-navy btn-flat" type="submit">Save Categoría de producto
+                                <button type="submit" class="btn bg-navy btn-flat" type="submit">Guardar categoría de producto
                                 </button><br/><br/>
 
                             <!-- /.box-body -->
@@ -61,8 +61,8 @@
                     <thead>
                     <tr>
                         <th class="active col-sm-1">SL</th>
-                        <th class="active">Category Name</th>
-                        <th class=" active col-sm-2">Action</th>
+                        <th class="active">Nombre de la categoría</th>
+                        <th class=" active col-sm-2">Acción</th>
 
                     </tr>
                     </thead>
@@ -87,7 +87,7 @@
                     ?><!--get all category if not this empty-->
                     <?php else : ?> <!--get error message if this empty-->
                         <td colspan="3">
-                            <strong>There is no record for display</strong>
+                            <strong>No hay registro para la visualización</strong>
                         </td><!--/ get error message if this empty-->
                     <?php
                     endif; ?>

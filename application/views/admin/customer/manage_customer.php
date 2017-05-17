@@ -24,9 +24,9 @@
                                 <th class="active">Customer Code</th>
                                 <th class="active">Customer Name</th>
                                 <th class="active">Email</th>
-                                <th class="active">Phone</th>
+                                <th class="active">Teléfono</th>
                                 <th class="active">Discount</th>
-                                <th class="active">Action</th>
+                                <th class="active">Acción</th>
 
                             </tr>
                             </thead><!-- / Table head -->
@@ -58,7 +58,7 @@
                             ?><!--get all sub category if not this empty-->
                             <?php else : ?> <!--get error message if this empty-->
                                 <td colspan="7">
-                                    <strong>There is no record for display</strong>
+                                    <strong>No hay registro para la visualización</strong>
                                 </td><!--/ get error message if this empty-->
                             <?php endif; ?>
                             </tbody><!-- / Table body -->

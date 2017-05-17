@@ -39,14 +39,14 @@
                                 echo $tab == 'price'?'active':'';
                             }
                         ?>">
-                            <a href="#price" data-toggle="tab">Price</a></li>
-                        <li><a href="#inventory" data-toggle="tab">Inventory</a></li>
+                            <a href="#price" data-toggle="tab">Precio</a></li>
+                        <li><a href="#inventory" data-toggle="tab">Inventario</a></li>
                         <li class="<?php
                         if(!empty($tab)){
                             echo $tab == 'attribute'?'active':'';
                         }
                         ?>">
-                            <a href="#attribute" data-toggle="tab">Attribute & Tag</a></li>
+                            <a href="#attribute" data-toggle="tab">Atributo y Tag</a></li>
 
                     </ul>
 
@@ -61,19 +61,19 @@
 
 
 
-                                        <!-- /.Product Code -->
+                                        <!-- /.Código del producto -->
                                     <div class="form-group">
-                                        <label>Product Code <span class="required">*</span></label>
+                                        <label>Código del producto <span class="required">*</span></label>
                                         <input type="text"  name="product_code" onchange="check_product_code(this.value)" required
                                                value="<?php if (!empty($product_info->product_code)) echo $product_info->product_code ?>"
                                                class="form-control">
                                         <div class="required" id="product_code_result"></div>
                                     </div>
 
-                                        <!-- /.Product Name -->
+                                        <!-- /.Nombre del producto -->
                                         <div class="form-group">
-                                            <label>Product Name <span class="required">*</span></label>
-                                            <input type="text" placeholder="Product Name" name="product_name"
+                                            <label>Nombre del producto <span class="required">*</span></label>
+                                            <input type="text" placeholder="Nombre del producto" name="product_name"
                                                    value="<?php
                                                    if (!empty($product_info)) {
                                                        echo $product_info->product_name;
@@ -82,11 +82,11 @@
                                                    class="form-control">
                                         </div>
 
-                                        <!-- /.Product Note -->
+                                        <!-- /.Nota del producto -->
                                         <div class="form-group">
-                                            <label>Product Note</label>
+                                            <label>Nota del producto</label>
                                             <textarea name="product_note" class="form-control autogrow" id="field-ta"
-                                                      placeholder="Product Note"><?php
+                                                      placeholder="Nota del producto"><?php
                                                 if (!empty($product_info)) {
                                                     echo $product_info->product_note;
                                                 }
@@ -97,7 +97,7 @@
                                         <div class="form-group">
                                             <label>Categoría de producto</label>
                                             <select name="category_id" class="form-control col-sm-5" id="category" onchange="get_category(this.value)">
-                                                <option value="">Select Categoría de producto</option>
+                                                <option value="">Seleccione Categoria de producto</option>
                                                 <?php if (!empty($category)): ?>
                                                     <?php foreach ($category as $v_category) : ?>
                                                         <option value="<?php echo $v_category->category_id; ?>"
@@ -115,9 +115,9 @@
 
                                         <!-- /.Sub Category -->
                                         <div class="form-group">
-                                            <label>Subcategory<span class="required">*</span></label>
+                                            <label>Subcategoría<span class="required">*</span></label>
                                             <select name="subcategory_id" class="form-control col-sm-5" id="subcategory">
-                                                <option value="">Product Subcategory</option>
+                                                <option value="">Subcategoría del producto</option>
                                                 <?php if (!empty($subcategory)): ?>
                                                     <?php foreach ($subcategory as $v_subcategogy) : ?>
                                                         <option value="<?php echo $v_subcategogy->subcategory_id; ?>"
@@ -135,9 +135,9 @@
 
                                         <!-- /.Tax -->
                                         <div class="form-group">
-                                            <label>Tax <span class="required">*</span></label>
+                                            <label>Impuesto <span class="required">*</span></label>
                                             <select name="tax_id" class="form-control col-sm-5">
-                                                <option value="">Select Tax</option>
+                                                <option value="">Seleccionar Impuesto</option>
                                                 <?php foreach($tax as $v_tax) { ?>
                                                     <option value="<?php echo $v_tax->tax_id ?>"
                                                         <?php
@@ -153,7 +153,7 @@
 
                                         <!-- /.Product Image -->
                                         <div class="form-group">
-                                            <label>Product Image</label>
+                                            <label>Imagen del producto</label>
                                         </div>
                                         <div class="form-group">
                                             <!-- hidden  old_path when update  -->
@@ -175,9 +175,9 @@
                                                     <span class="btn btn-default btn-file">
                                                         <span class="fileinput-new">
                                                             <input type="file" name="product_image" /></span>
-                                                        <span class="fileinput-exists">Change</span>
+                                                        <span class="fileinput-exists">Cambiar</span>
                                                     </span>
-                                                    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remover</a>
                                                 </div>
                                                 <div id="valid_msg" class="required"></div>
                                             </div>
@@ -203,13 +203,13 @@
                                 " id="price">
 
                                     <!-- /.General Price Start -->
-                                    <h5>Product General Price</h5>
+                                    <h5>Precio General del Producto</h5>
                                     <div class="box">
                                         <div class="box-body">
 
                                             <!-- /.Buying Price -->
                                             <div class="form-group">
-                                                <label>Buying Price <span class="required">*</span></label>
+                                                <label>Precio de compra <span class="required">*</span></label>
 
                                             <div class="input-group">
                                                 <span class="input-group-addon">
@@ -233,7 +233,7 @@
 
                                             <!-- /.Selling Price -->
                                             <div class="form-group form-group-bottom">
-                                                <label>Selling Price</label>
+                                                <label>Precio de venta</label>
 
                                             <div class="input-group">
                                                 <span class="input-group-addon">
@@ -264,13 +264,13 @@
                                     <!-- ************* Special Offer Tab Start ************** -->
 
                                     <!-- /.Special Offer Start -->
-                                    <h5>Special Offer</h5>
+                                    <h5>Oferta especial</h5>
                                     <div class="box">
                                         <div class="box-body">
 
                                             <!-- /.Start Date -->
                                             <div class="form-group form-group-bottom">
-                                                <label>Start Date</label>
+                                                <label>Fecha de inicio</label>
                                             </div>
                                             <div class="input-group">
                                                 <input type="text" value="<?php
@@ -288,7 +288,7 @@
                                             <!-- /.End Date -->
                                             <div class="form-group form-group-bottom">
                                             <div class="form-group form-group-bottom">
-                                                <label >End Date</label>
+                                                <label >Fecha de termino</label>
                                             </div>
                                             <div class="input-group">
                                                 <input type="text" value="<?php
@@ -307,7 +307,7 @@
 
                                             <!-- /.Selling Price -->
                                             <div class="form-group form-group-bottom">
-                                                <label>Special Offer Price</label>
+                                                <label>Precio Oferta Especial</label>
 
                                             <div class="input-group">
                                                 <span class="input-group-addon">
@@ -338,7 +338,7 @@
                                     <!-- ************* Product Tier Price Start *********** -->
 
                                     <!-- /.Tier Price Start -->
-                                    <h5>Tier Price</h5>
+                                    <h5>Rango de precios</h5>
                                     <div class="box">
                                         <div class="box-body">
 
@@ -347,9 +347,9 @@
                                                     <thead>
 
                                                     <tr>
-                                                        <th class="col-sm-3">Quantity Above</th>
-                                                        <th class="">Selling Price</th>
-                                                        <th class="col-sm-2"> <a  href="javascript:void(0);" class="addTire btn btn-info "><i class="fa fa-plus"></i> Add More</a></th>
+                                                        <th class="col-sm-3">Cantidad anterior</th>
+                                                        <th class="">Precio de venta</th>
+                                                        <th class="col-sm-2"> <a  href="javascript:void(0);" class="addTire btn btn-info "><i class="fa fa-plus"></i> Añadir más</a></th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
@@ -427,13 +427,13 @@
                                 <div class="tab-pane" id="inventory">
 
                                     <!-- /.Product Inventory Start -->
-                                    <h5>Product Inventory</h5>
+                                    <h5>Inventario de productos</h5>
                                     <div class="box">
                                         <div class="box-body">
 
                                             <!-- /.Buying Price -->
                                             <div class="form-group">
-                                                <label>Product Quantity </label>
+                                                <label>Cantidad de producto </label>
                                                 <input type="text" id="product_quantity" name="product_quantity" placeholder="Quantity"
                                                        value="<?php
                                                        if (!empty($inventory)) {
@@ -445,8 +445,8 @@
 
                                             <!-- /.Selling Price -->
                                             <div class="form-group">
-                                                <label>Notify Bellow Quantity </label>
-                                                <input type="text" name="notify_quantity" placeholder="Notify Quantity"
+                                                <label>Notificar en la cantidad </label>
+                                                <input type="text" name="notify_quantity" placeholder="Notificar cantidad"
                                                        value="<?php
                                                        if (!empty($inventory)) {
                                                            echo $inventory->notify_quantity;
@@ -476,7 +476,7 @@
                                 " id="attribute">
 
                                     <!-- /.Attribute Start -->
-                                    <h5>Product Attribute</h5>
+                                    <h5>Atributo del producto</h5>
                                     <div class="box">
                                         <div class="box-body">
                                             <div class="table">
@@ -484,9 +484,9 @@
                                                     <thead>
 
                                                     <tr>
-                                                        <th class="">Attribute</th>
-                                                        <th class="">Value</th>
-                                                        <th class="col-sm-2"> <a  href="javascript:void(0);" class="addAttribute btn btn-info "><i class="fa fa-plus"></i> Add More</a></th>
+                                                        <th class="">Atributo</th>
+                                                        <th class="">Valor</th>
+                                                        <th class="col-sm-2"> <a  href="javascript:void(0);" class="addAttribute btn btn-info "><i class="fa fa-plus"></i> Añadir màs</a></th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
@@ -537,7 +537,7 @@
                                     <!-- ************* Product Attribute End ******** -->
 
                                     <!-- /.Product Tag Start -->
-                                    <h5>Product Tag</h5>
+                                    <h5>Tag del producto</h5>
                                     <div class="box">
                                         <div class="box-body">
 
@@ -601,7 +601,7 @@
                     </div>
 
                     <div class="box-footer">
-                        <button type="submit"  id="submit" class="btn bg-navy btn-flat col-md-offset-3" type="submit">Save Product
+                        <button type="submit"  id="submit" class="btn bg-navy btn-flat col-md-offset-3" type="submit">Guardar Producto
                         </button>
                     </div>
 

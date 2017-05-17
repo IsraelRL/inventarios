@@ -37,7 +37,7 @@
 
                                 <div class="box  box-warning">
                                     <div class="box-header box-header-background-light with-border">
-                                        <h3 class="box-title ">Select Product</h3>
+                                        <h3 class="box-title ">Select Producto</h3>
                                     </div>
 
 
@@ -46,7 +46,7 @@
                                         <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
                                             <li class="active"><a href="#product-list" data-toggle="tab">Shopping Cart</a>
                                             </li>
-                                            <li><a href="#search-product" data-toggle="tab">Search Product</a></li>
+                                            <li><a href="#search-product" data-toggle="tab">Search Producto</a></li>
                                         </ul>
 
 
@@ -98,7 +98,7 @@
                                                         <tr>
                                                             <th class="col-sm-1 active"><input type="checkbox" class="checkbox-inline" id="parent_present" /></th>
                                                             <th class="active">Barcode</th>
-                                                            <th class="active">Product Name</th>
+                                                            <th class="active">Nombre del producto</th>
                                                             <th class="active">Inventory</th>
                                                             <th class="active col-md-1">Purchase</th>
 
@@ -149,7 +149,7 @@
                                                             ?><!--get all sub category if not this empty-->
                                                         <?php else : ?> <!--get error message if this empty-->
                                                             <td colspan="12">
-                                                                <strong>There is no record for display</strong>
+                                                                <strong>No hay registro para la visualización</strong>
                                                             </td><!--/ get error message if this empty-->
                                                         <?php endif; ?>
 
@@ -248,7 +248,7 @@
             messages: {
 
                 product_name: {
-                    required: "Please enter Product Name"
+                    required: "Please enter Nombre del producto"
                 }
 
 

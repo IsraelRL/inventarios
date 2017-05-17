@@ -252,7 +252,7 @@ footer {
         <tr>
             <th class="no">#</th>
             <th class="desc">DESCRIPTION</th>
-            <th class="unit" style="text-align: right">UNIT PRICE</th>
+            <th class="unit" style="text-align: right">Precio Unitario</th>
             <th class="qty" style="text-align: right">QUANTITY</th>
             <th class="total" style="text-align: right">TOTAL</th>
         </tr>

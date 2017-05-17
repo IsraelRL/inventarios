@@ -11,7 +11,7 @@
 
             <div class="box box-primary">
                 <div class="box-header box-header-background with-border">
-                    <h3 class="box-title ">Add Damage Product</h3>
+                    <h3 class="box-title ">Añadir producto dañado</h3>
                 </div>
                 <!-- /.box-header -->
 
@@ -28,9 +28,9 @@
 
                                 <!-- /.product -->
                                 <div class="form-group">
-                                    <label>Select Product<span class="required">*</span></label>
+                                    <label>Seleccione Producto<span class="required">*</span></label>
                                     <select id="e2" style="width: 100%;" name="product_id" required>
-                                        <option value="">Select Product</option>
+                                        <option value="">Seleccione Producto</option>
                                         <?php if (!empty($product)): ?>
                                             <?php foreach ($product as $v_product) : ?>
                                                 <option value="<?php echo $v_product->product_id; ?>">
@@ -44,22 +44,22 @@
 
                                 <!-- /.damage qty -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Damage Quantity <span class="required">*</span></label>
-                                    <input type="text" name="qty" placeholder="Damage Qty" class="form-control">
+                                    <label for="exampleInputEmail1">Cantidad dañada <span class="required">*</span></label>
+                                    <input type="text" name="qty" placeholder="Cantidad dañada" class="form-control">
                                 </div>
 
                                 <!-- /.note -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Notes</label>
+                                    <label for="exampleInputEmail1">Notas</label>
                                     <textarea name="note" class="form-control autogrow"
-                                              placeholder="Note"></textarea>
+                                              placeholder="Notas"></textarea>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Decrease From Stock</label>
+                                    <label for="exampleInputEmail1">Disminución de stock</label>
                                     <select name="decrease" class="form-control">
-                                        <option value="">Decrease From Stock ?</option>
-                                        <option value="1">Yes</option>
+                                        <option value="">Disminución de stock?</option>
+                                        <option value="1">Si</option>
                                         <option value="0">No</option>
                                     </select>
                                 </div>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                     <div class="box-footer">
-                        <button type="submit" class="btn bg-navy btn-flat" type="submit">Add Damage Product
+                        <button type="submit" class="btn bg-navy btn-flat" type="submit">Añadir producto dañado
                         </button>
                     </div>
                 </form>

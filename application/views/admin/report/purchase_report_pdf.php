@@ -310,10 +310,10 @@ table tfoot tr td:first-child {
             <thead>
             <tr style="background-color: #ECECEC">
                 <th class="no text-right">#</th>
-                <th class="desc">Product Code</th>
+                <th class="desc">Código del producto</th>
                 <th class="desc">Description</th>
                 <th class="unit text-right">Buying Price</th>
-                <th class="qty text-right">Qty</th>
+                <th class="qty text-right">Cantidad</th>
                 <th class="total text-right ">TOTAL</th>
             </tr>
             </thead>

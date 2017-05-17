@@ -12,20 +12,20 @@
             <div class="box box-primary">
                 <div class="box-header box-header-background with-border">
 
-                        <h3 class="box-title ">Manage Product</h3>
+                        <h3 class="box-title ">Administrar Producto</h3>
 
 
 
                     <div class="box-tools">
                         <div class="input-group ">
                             <select class="form-control pull-right" name="action" style="width: 150px;" required>
-                                <option value="">Select..</option>
-                                <option value="1">Active</option>
-                                <option value="2">Deactivate</option>
-                                <option value="3">Delete</option>
+                                <option value="">Seleccionar..</option>
+                                <option value="1">Activo</option>
+                                <option value="2">Desactivar</option>
+                                <option value="3">Borrar</option>
                             </select>
                                     <span class="input-group-btn">
-                                      <button type="submit" class="btn btn-default" type="button">Action</button>
+                                      <button type="submit" class="btn btn-default" type="button">Acción</button>
                                     </span>
                         </div>
                     </div>
@@ -42,13 +42,13 @@
                             <thead ><!-- Table head -->
                             <tr>
                                 <th class="col-sm-1 active" style="width: 21px"><input type="checkbox" class="checkbox-inline" id="parent_present" /></th>
-                                <th class="active">Image</th>
-                                <th class="active">Code</th>
-                                <th class="active">Product Name</th>
+                                <th class="active">Imagen</th>
+                                <th class="active">Código</th>
+                                <th class="active">Nombre del producto</th>
                                 <th class="active">Categoría de producto</th>
-                                <th class="active">Stock Available</th>
+                                <th class="active">Stock disponible</th>
                                 <th class="active">Status</th>
-                                <th class="active">Action</th>
+                                <th class="active">Acción</th>
 
                             </tr>
                             </thead><!-- / Table head -->
@@ -107,7 +107,7 @@
                             ?><!--get all sub category if not this empty-->
                             <?php else : ?> <!--get error message if this empty-->
                                 <td colspan="8">
-                                    <strong>There is no data to display</strong>
+                                    <strong>No hay datos para mostrar</strong>
                                 </td><!--/ get error message if this empty-->
                             <?php endif; ?>
                             </tbody><!-- / Table body -->

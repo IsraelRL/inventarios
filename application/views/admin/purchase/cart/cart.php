@@ -2,11 +2,11 @@
     <thead ><!-- Table head -->
     <tr>
         <th class="active">Sl</th>
-        <th class="active col-sm-6">Product</th>
-        <th class="active ">Qty</th>
-        <th class="active ">Unit Price</th>
+        <th class="active col-sm-6">Producto</th>
+        <th class="active ">Cantidad</th>
+        <th class="active ">Precio Unitario</th>
         <th class="active">Total</th>
-        <th class="active">Action</th>
+        <th class="active">Acción</th>
 
     </tr>
     </thead><!-- / Table head -->
@@ -99,7 +99,7 @@
 
     <?php else : ?> <!--get error message if this empty-->
         <td colspan="6">
-            <strong>There is no record for display</strong>
+            <strong>No hay registro para la visualización</strong>
         </td><!--/ get error message if this empty-->
     <?php endif; ?>
     </tbody><!-- / Table body -->

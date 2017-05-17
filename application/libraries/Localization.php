@@ -143,7 +143,7 @@ class Localization
         if(!empty($info->company_name)){
             $company_name = $info->company_name;
         }else{
-            $company_name = 'Your Company Name';
+            $company_name = 'Your Nombre de la empresa';
         }
 
         //company phone

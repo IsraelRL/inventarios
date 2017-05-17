@@ -74,7 +74,7 @@ mpdf-->
 <td width="15%">Ref. No.</td>
 <td width="10%">Quantity</td>
 <td width="45%">Description</td>
-<td width="15%">Unit Price</td>
+<td width="15%">Precio Unitario</td>
 <td width="15%">Amount</td>
 </tr>
 </thead>

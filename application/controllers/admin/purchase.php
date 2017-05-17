@@ -34,7 +34,7 @@ class Purchase extends Admin_Controller
 
     }
 
-    /*** Add Supplier ***/
+    /*** Agregar proveedor ***/
     public function add_supplier($id = null)
     {
         $this->tbl_supplier('supplier_id');
@@ -54,7 +54,7 @@ class Purchase extends Admin_Controller
         }
 
         // view page
-        $data['title'] = 'Add New Supplier';
+        $data['title'] = 'Agregar nuevo proveedor ';
         $data['editor'] = $this->data;
         $data['subview'] = $this->load->view('admin/purchase/add_supplier', $data, true);
         $this->load->view('admin/_layout_main', $data);
@@ -74,13 +74,13 @@ class Purchase extends Admin_Controller
 
     }
 
-    /*** Manage Supplier ***/
+    /*** Administrar Proveedor ***/
     public function manage_supplier($id = null)
     {
         $this->tbl_supplier('supplier_id', 'desc');
         $data['supplier'] = $this->global_model->get();
             // view page
-        $data['title'] = 'Add New Supplier';
+        $data['title'] = 'Agregar nuevo proveedor ';
         $data['subview'] = $this->load->view('admin/purchase/manage_supplier', $data, true);
         $this->load->view('admin/_layout_main', $data);
     }
@@ -106,7 +106,7 @@ class Purchase extends Admin_Controller
         $data['supplier'] = $this->global_model->get();
 
         // view page
-        $data['title'] = 'Add New Supplier';
+        $data['title'] = 'Agregar nuevo proveedor ';
         $data['subview'] = $this->load->view('admin/purchase/purchase', $data, true);
         $this->load->view('admin/_layout_full', $data);
     }
@@ -296,7 +296,7 @@ class Purchase extends Admin_Controller
         $this->tbl_purchase('purchase_id', 'desc');
         $data['purchase'] = $this->global_model->get();
 
-        $data['title'] = 'Purchase History';
+        $data['title'] = 'Historial de compras';
         $data['subview'] = $this->load->view('admin/purchase/purchase_list', $data, true);
         $this->load->view('admin/_layout_main', $data);
 

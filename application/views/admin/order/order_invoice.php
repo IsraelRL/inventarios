@@ -95,7 +95,7 @@
                         <tr>
                             <th class="no text-right">#</th>
                             <th class="desc">DESCRIPTION</th>
-                            <th class="unit text-right">UNIT PRICE</th>
+                            <th class="unit text-right">Precio Unitario</th>
                             <th class="qty text-right">QUANTITY</th>
                             <th class="total text-right ">TOTAL</th>
                         </tr>

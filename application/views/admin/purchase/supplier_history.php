@@ -27,10 +27,10 @@ if(!empty($info->currency))
 
                     <div class="row">
                         <div class="col-md-4 col-md-offset-2">
-                          <strong>Company Name:</strong>  <?php echo $supplier->company_name ?>
+                          <strong>Nombre de la empresa:</strong>  <?php echo $supplier->company_name ?>
                         </div>
                         <div class="col-md-6">
-                            <strong>Supplier Name:</strong>  <?php echo $supplier->supplier_name ?>
+                            <strong>Nombre del proveedor:</strong>  <?php echo $supplier->supplier_name ?>
                         </div>
                     </div>
 
@@ -39,7 +39,7 @@ if(!empty($info->currency))
                             <strong>Email:</strong>  <?php echo $supplier->email ?>
                         </div>
                         <div class="col-md-6">
-                            <strong>Phone:</strong>  <?php echo $supplier->phone ?>
+                            <strong>Teléfono:</strong>  <?php echo $supplier->phone ?>
                         </div>
                     </div>
                     <div class="row">
@@ -58,11 +58,11 @@ if(!empty($info->currency))
                             <tr>
                                 <th class="active">Sl</th>
                                 <th class="active">Invoice No.</th>
-                                <th class="active">Supplier Name</th>
+                                <th class="active">Nombre del proveedor</th>
                                 <th class="active">Purchase Date</th>
                                 <th class="active">Grand Total</th>
                                 <th class="active">Purchase By</th>
-                                <th class="active">Action</th>
+                                <th class="active">Acción</th>
 
                             </tr>
                             </thead><!-- / Table head -->
@@ -91,7 +91,7 @@ if(!empty($info->currency))
                             ?><!--get all sub category if not this empty-->
                             <?php else : ?> <!--get error message if this empty-->
                                 <td colspan="6">
-                                    <strong>There is no record for display</strong>
+                                    <strong>No hay registro para la visualización</strong>
                                 </td><!--/ get error message if this empty-->
                             <?php endif; ?>
                             </tbody><!-- / Table body -->

@@ -139,7 +139,7 @@
                                             <th class="desc">Description</th>
                                             <th class="unit text-right">Buying Price</th>
                                             <th class="unit text-right">Selling Price</th>
-                                            <th class="qty text-right">Qty</th>
+                                            <th class="qty text-right">Cantidad</th>
                                             <th class="qty text-right">Tax</th>
                                             <th class="total text-right ">TOTAL</th>
                                         </tr>
@@ -228,7 +228,7 @@
                                     </table>
 
                                     <?php else: ?>
-                                    <strong>There is no record for display</strong>
+                                    <strong>No hay registro para la visualización</strong>
                                     <?php endif ?>
 
 

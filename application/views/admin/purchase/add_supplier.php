@@ -8,7 +8,7 @@
 
             <div class="box box-primary">
                 <div class="box-header box-header-background with-border">
-                    <h3 class="box-title ">Add New Supplier</h3>
+                    <h3 class="box-title ">Agregar nuevo proveedor </h3>
                 </div>
                 <!-- /.box-header -->
 
@@ -25,10 +25,10 @@
 
                             <div class="box-body">
 
-                                <!-- /.Company Name -->
+                                <!-- /.Nombre de la empresa -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Company Name <span class="required">*</span></label>
-                                    <input type="text" name="company_name" placeholder="Company Name"
+                                    <label for="exampleInputEmail1">Nombre de la empresa <span class="required">*</span></label>
+                                    <input type="text" name="company_name" placeholder="Nombre de la empresa"
                                            value="<?php
                                            if (!empty($supplier->company_name)) {
                                                echo $supplier->company_name;
@@ -37,10 +37,10 @@
                                            class="form-control">
                                 </div>
 
-                                <!-- /.Company Name -->
+                                <!-- /.Nombre de la empresa -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Supplier Name <span class="required">*</span></label>
-                                    <input type="text" name="supplier_name" placeholder="Supplier Name"
+                                    <label for="exampleInputEmail1">Nombre del proveedor <span class="required">*</span></label>
+                                    <input type="text" name="supplier_name" placeholder="Nombre del proveedor"
                                            value="<?php
                                            if (!empty($supplier->supplier_name)) {
                                                echo $supplier->supplier_name;
@@ -64,8 +64,8 @@
 
                                 <!-- /.Phone -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Phone<span class="required"> *</span></label>
-                                    <input type="text" placeholder="Phone" name="phone"
+                                    <label for="exampleInputEmail1">Teléfono<span class="required"> *</span></label>
+                                    <input type="text" placeholder="Teléfono" name="phone"
                                            value="<?php
                                            if (!empty($supplier->phone)) {
                                                echo $supplier->phone;
@@ -76,7 +76,7 @@
 
                                 <!-- /.Address -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Address <span class="required">*</span></label>
+                                    <label for="exampleInputEmail1">Dirección <span class="required">*</span></label>
                                     <textarea name="address" class="form-control autogrow" rows="10" id="ck_editor"
                                               placeholder="Business Address" required><?php
                                         if (!empty($supplier->address)) {
@@ -93,7 +93,7 @@
                         </div>
                     </div>
                     <div class="box-footer">
-                        <button type="submit" class="btn bg-navy btn-flat" type="submit">Add Supplier
+                        <button type="submit" class="btn bg-navy btn-flat" type="submit">Agregar proveedor
                         </button>
                     </div>
                 </form>

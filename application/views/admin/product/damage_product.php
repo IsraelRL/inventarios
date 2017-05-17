@@ -10,12 +10,12 @@
 
             <div class="box box-primary ">
                 <div class="box-header box-header-background with-border">
-                        <h3 class="box-title ">Damage Product</h3>
+                        <h3 class="box-title ">Producto dañado</h3>
                 </div>
 
 
                 <div class="box-body">
-                    <a href="<?php echo base_url() ?>admin/product/add_damage_product" class=" btn bg-navy btn-flat  pull-right" >Add Damage Product</a>
+                    <a href="<?php echo base_url() ?>admin/product/add_damage_product" class=" btn bg-navy btn-flat  pull-right" >Añadir producto dañado</a>
 
                     <br/>
                     <br/>
@@ -24,12 +24,12 @@
                             <thead ><!-- Table head -->
                             <tr>
                                 <th class="active col-sm-1">Sl</th>
-                                <th class="active">Product Code</th>
-                                <th class="active">Product Name</th>
-                                <th class="active">Category</th>
-                                <th class="active">Damage Qty</th>
-                                <th class="active">Note</th>
-                                <th class="active">Date</th>
+                                <th class="active">Código del producto</th>
+                                <th class="active">Nombre del producto</th>
+                                <th class="active">Categoría</th>
+                                <th class="active">Cantidad dañada</th>
+                                <th class="active">Nota</th>
+                                <th class="active">Fecha</th>
 
                             </tr>
                             </thead><!-- / Table head -->
@@ -53,7 +53,7 @@
                             ?><!--get all sub category if not this empty-->
                             <?php else : ?> <!--get error message if this empty-->
                                 <td colspan="7">
-                                    <strong>There is no record for display</strong>
+                                    <strong>No hay registro para la visualización</strong>
                                 </td><!--/ get error message if this empty-->
                             <?php endif; ?>
                             </tbody><!-- / Table body -->

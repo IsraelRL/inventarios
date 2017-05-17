@@ -912,7 +912,7 @@ class Product extends Admin_Controller
         if(!empty($product_code)) {
             $result = $this->product_model->check_product_code($product_code, $product_id);
             if ($result) {
-                echo 'This Product Code is Exist!';
+                echo 'This Código del producto is Exist!';
             }
         }
 

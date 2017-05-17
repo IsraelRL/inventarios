@@ -22,33 +22,32 @@
 
                           <li class="col-sm-3">
                               <ul>
-                                  <li class="dropdown-header">Sales (POS)</li>
-                                  <li><a href="<?php echo site_url('admin/order/new_order')?>"><spna style="color: #00a7d0"><i class="fa fa-shopping-cart" aria-hidden="true"></i></spna> New Sales</a></li>
-                                  <li><a href="<?php echo site_url('admin/order/manage_invoice') ?>"><spna style="color: #00a7d0"><i class="fa fa-file-text-o" aria-hidden="true"></i></spna> Manage Invoice</a></li>
-                                  <li><a href="<?php echo site_url('admin/order/manage_order') ?>"><spna style="color: #00a7d0"><i class="fa fa-file-text-o" aria-hidden="true"></i></spna> Manage Order</a></li>
+                                  <li class="dropdown-header">Ventas (PDV)</li>
+                                  <li><a href="<?php echo site_url('admin/order/new_order')?>"><spna style="color: #00a7d0"><i class="fa fa-shopping-cart" aria-hidden="true"></i></spna> Nuevas ventas</a></li>
+                                  <li><a href="<?php echo site_url('admin/order/manage_invoice') ?>"><spna style="color: #00a7d0"><i class="fa fa-file-text-o" aria-hidden="true"></i></spna> Administrar factura</a></li>
+                                  <li><a href="<?php echo site_url('admin/order/manage_order') ?>"><spna style="color: #00a7d0"><i class="fa fa-file-text-o" aria-hidden="true"></i></spna> Administrar pedido</a></li>
 
                               </ul>
                           </li>
 
                           <li class="col-sm-3">
                               <ul>
-                                  <li class="dropdown-header">Sales Report</li>
-                                  <li><a href="<?php echo site_url('admin/report/sales_report') ?>"><spna style="color: #00a7d0"><i class="fa fa-file-text-o" aria-hidden="true"></i></spna> Sales Report</a></li>
-                                  <li><a href="<?php echo site_url('admin/report/sales_summery_report') ?>"><spna style="color: #00a7d0"><i class="fa fa-file-text-o" aria-hidden="true"></i></spna> Sales Summary</a></li>
-                                  <li><a href="<?php echo site_url('admin/report/purchase_report') ?>"><spna style="color: #00a7d0"><i class="fa fa-file-text-o" aria-hidden="true"></i></spna> Purchase Report</a></li>
-                                  <li><a href="<?php echo site_url('admin/report/stock_report') ?>"><spna style="color: #00a7d0"><i class="fa fa-file-text-o" aria-hidden="true"></i></spna> Stock Summary</a></li>
+                                  <li class="dropdown-header">Reporte de ventas</li>
+                                  <li><a href="<?php echo site_url('admin/report/sales_report') ?>"><spna style="color: #00a7d0"><i class="fa fa-file-text-o" aria-hidden="true"></i></spna> Reporte de ventas</a></li>
+                                  <li><a href="<?php echo site_url('admin/report/sales_summery_report') ?>"><spna style="color: #00a7d0"><i class="fa fa-file-text-o" aria-hidden="true"></i></spna> Res. de Ventas</a></li>
+                                  <li><a href="<?php echo site_url('admin/report/purchase_report') ?>"><spna style="color: #00a7d0"><i class="fa fa-file-text-o" aria-hidden="true"></i></spna> Inf. de compras</a></li>
+                                  <li><a href="<?php echo site_url('admin/report/stock_report') ?>"><spna style="color: #00a7d0"><i class="fa fa-file-text-o" aria-hidden="true"></i></spna> Resumen de existencias</a></li>
 
                               </ul>
                           </li>
 
                           <li class="col-sm-3">
                               <ul>
-                                  <li class="dropdown-header">Product & Service</li>
-                                  <li><a href="<?php echo site_url('admin/product/add_product') ?>"><spna style="color: #00a7d0"><i class="fa fa-plus" aria-hidden="true"></i></spna> Add Product</a></li>
-                                  <li><a href="<?php echo site_url('admin/product/manage_product') ?>"><spna style="color: #00a7d0"><i class="glyphicon glyphicon-th-large" aria-hidden="true"></i></spna> Manage Product</a></li>
-                                  <li><a href="<?php echo site_url('admin/product/print_barcode') ?>"><spna style="color: #00a7d0"><i class="glyphicon glyphicon-barcode" aria-hidden="true"></i></spna> Barcode Print</a></li>
-                                  <li><a href="<?php echo site_url('admin/product/damage_product') ?>"><spna style="color: #00a7d0"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i></spna> Damage Product</a></li>
-
+                                  <li class="dropdown-header">Productos y servicios</li>
+                                  <li><a href="<?php echo site_url('admin/product/add_product') ?>"><spna style="color: #00a7d0"><i class="fa fa-plus" aria-hidden="true"></i></spna> Agregar producto </a></li>
+                                  <li><a href="<?php echo site_url('admin/product/manage_product') ?>"><spna style="color: #00a7d0"><i class="glyphicon glyphicon-th-large" aria-hidden="true"></i></spna> Admin. producto</a></li>
+                                  <li><a href="<?php echo site_url('admin/product/damage_product') ?>"><spna style="color: #00a7d0"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i></spna> Producto Dañado</a></li>
+                                  <li><a href="<?php echo site_url('admin/product/print_barcode') ?>"><spna style="color: #00a7d0"><i class="glyphicon glyphicon-barcode" aria-hidden="true"></i></spna> Impresión del código de barras</a></li>
                               </ul>
                           </li>
 
@@ -56,7 +55,7 @@
                               <ul>
                                   <li class="dropdown-header">Manejar compras</li>
                                   <li><a href="<?php echo site_url('admin/purchase/add_supplier') ?>"><spna style="color: #00a7d0"><i class="fa fa-plus" aria-hidden="true"></i></spna> Agregar proveedor</a></li>
-                                  <li><a href="<?php echo site_url('admin/purchase/manage_supplier') ?>"><spna style="color: #00a7d0"><i class="glyphicon glyphicon-briefcase" aria-hidden="true"></i></spna> Administrar proveedores</a></li>
+                                  <li><a href="<?php echo site_url('admin/purchase/manage_supplier') ?>"><spna style="color: #00a7d0"><i class="glyphicon glyphicon-briefcase" aria-hidden="true"></i></spna> Admin. proveedores</a></li>
                                   <li><a href="<?php echo site_url('admin/purchase/new_purchase') ?>"><spna style="color: #00a7d0"><i class="fa fa-shopping-cart" aria-hidden="true"></i></spna> Nueva compra</a></li>
                                   <li><a href="<?php echo site_url('admin/purchase/purchase_list') ?>"><spna style="color: #00a7d0"><i class="glyphicon glyphicon-th-list" aria-hidden="true"></i></spna> Historial de compras</a></li>
                               </ul>

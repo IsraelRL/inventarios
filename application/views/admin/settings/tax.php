@@ -12,7 +12,7 @@
             <div class="box box-primary">
                 <div class="box-header box-header-background with-border">
                     <div class="col-md-offset-3">
-                        <h3 class="box-title ">Manage Tax Rules</h3>
+                        <h3 class="box-title ">Administrar reglas de impuestos</h3>
                     </div>
                 </div>
                 <!-- /.box-header -->
@@ -32,7 +32,7 @@
 
                                 <!-- /.tax title -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Title <span class="required">*</span></label>
+                                    <label for="exampleInputEmail1">Titulo <span class="required">*</span></label>
                                     <input type="text" required name="tax_title" placeholder="Title"
                                            value="<?php
                                            if (!empty($tax->tax_title)) {
@@ -106,7 +106,7 @@
                         <th class="active">Tax Name</th>
                         <th class="active">Tax Rate</th>
                         <th class="active">Tax Type</th>
-                        <th class="col-sm-2 active">Action</th>
+                        <th class="col-sm-2 active">Acción</th>
 
                     </tr>
                     </thead>
@@ -136,7 +136,7 @@
                     ?><!--get all category if not this empty-->
                     <?php else : ?> <!--get error message if this empty-->
                         <td colspan="5">
-                            <strong>There is no record for display</strong>
+                            <strong>No hay registro para la visualización</strong>
                         </td><!--/ get error message if this empty-->
                     <?php
                     endif; ?>

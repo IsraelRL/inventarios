@@ -1070,8 +1070,8 @@ class PDFBarcode {
 	
 	/**
 	 * EAN13 and UPC-A barcodes.
-	 * EAN13: European Article Numbering international retail product code
-	 * UPC-A: Universal product code seen on almost all retail products in the USA and Canada
+	 * EAN13: European Article Numbering international retail Código del producto
+	 * UPC-A: Universal Código del producto seen on almost all retail products in the USA and Canada
 	 * UPC-E: Short version of UPC symbol
 	 */
 	protected function barcode_eanupc($code, $len=13) {
@@ -1120,7 +1120,7 @@ class PDFBarcode {
 		if ($upce) {
 			// convert UPC-A to UPC-E
 			$tmp = substr($code, 4, 3);
-			$prod_code = intval(substr($code,7,5));	// product code
+			$prod_code = intval(substr($code,7,5));	// Código del producto
 			$invalid_upce = false;
 			if (($tmp == '000') OR ($tmp == '100') OR ($tmp == '200')) {
 				// manufacturer code ends in 000, 100, or 200

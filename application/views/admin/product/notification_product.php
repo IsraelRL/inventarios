@@ -12,7 +12,7 @@
             <div class="box box-primary">
                 <div class="box-header box-header-background with-border">
 
-                        <h3 class="box-title ">Notification Product</h3>
+                        <h3 class="box-title ">Notification Producto</h3>
 
                 </div>
 
@@ -25,9 +25,9 @@
                             <tr>
                                 <th class="active">Image</th>
                                 <th class="active">Code</th>
-                                <th class="active">Product Name</th>
-                                <th class="active">Stock Available</th>
-                                <th class="active">Action</th>
+                                <th class="active">Nombre del producto</th>
+                                <th class="active">Stock disponible</th>
+                                <th class="active">Acción</th>
 
                             </tr>
                             </thead><!-- / Table head -->
@@ -69,7 +69,7 @@
                             ?><!--get all sub category if not this empty-->
                             <?php else : ?> <!--get error message if this empty-->
                                 <td colspan="8">
-                                    <strong>There is no data to display</strong>
+                                    <strong>No hay datos para mostrar</strong>
                                 </td><!--/ get error message if this empty-->
                             <?php endif; ?>
                             </tbody><!-- / Table body -->

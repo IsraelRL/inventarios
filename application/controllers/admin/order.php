@@ -456,10 +456,10 @@ class Order extends Admin_Controller
         $this->load->view('admin/_layout_main', $data);
     }
 
-    /*** Manage Invoice ***/
+    /*** Administrar factura ***/
     public function manage_invoice(){
         $data['invoice'] = $this->order_model->get_all_invoice();
-        $data['title'] = 'Manage Invoice';
+        $data['title'] = 'Administrar factura';
         $data['subview'] = $this->load->view('admin/order/manage_invoice', $data, true);
         $this->load->view('admin/_layout_main', $data);
     }
