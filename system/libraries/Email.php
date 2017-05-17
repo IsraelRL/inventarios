@@ -356,7 +356,7 @@ class CI_Email {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Set Email Subject
+	 * Set Asunto del email
 	 *
 	 * @access	public
 	 * @param	string

@@ -471,7 +471,7 @@ class PHPExcel_Worksheet_AutoFilter
 
 		$ruleValues = array();
 		$baseDate = PHPExcel_Calculation_DateTime::DATENOW();
-		//	Calculate start/end dates for the required date range based on current date
+		//	Calculate start/Fecha finals for the required date range based on current date
 		switch ($dynamicRuleType) {
 			case PHPExcel_Worksheet_AutoFilter_Column_Rule::AUTOFILTER_RULETYPE_DYNAMIC_LASTWEEK :
 				$baseDate = strtotime('-7 days',$baseDate);

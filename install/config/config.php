@@ -206,11 +206,11 @@ $config['log_path'] = '';
 
 /*
 |--------------------------------------------------------------------------
-| Date Format for Logs
+| Formato de fecha for Logs
 |--------------------------------------------------------------------------
 |
 | Each item that is logged has an associated date. You can use PHP date
-| codes to set your own date formatting
+| codes to set your own Formato de fechating
 |
 */
 $config['log_date_format'] = 'Y-m-d H:i:s';

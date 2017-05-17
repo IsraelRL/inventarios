@@ -59,14 +59,14 @@ class PHPExcel_Calculation_DateTime {
 	/**
 	 * Return the number of days between two dates based on a 360 day calendar
 	 *
-	 * @param	integer	$startDay		Day of month of the start date
-	 * @param	integer	$startMonth		Month of the start date
-	 * @param	integer	$startYear		Year of the start date
-	 * @param	integer	$endDay			Day of month of the start date
-	 * @param	integer	$endMonth		Month of the start date
-	 * @param	integer	$endYear		Year of the start date
+	 * @param	integer	$startDay		Day of month of the Fecha de inicio
+	 * @param	integer	$startMonth		Month of the Fecha de inicio
+	 * @param	integer	$startYear		Year of the Fecha de inicio
+	 * @param	integer	$endDay			Day of month of the Fecha de inicio
+	 * @param	integer	$endMonth		Month of the Fecha de inicio
+	 * @param	integer	$endYear		Year of the Fecha de inicio
 	 * @param	boolean $methodUS		Whether to use the US method or the European method of calculation
-	 * @return	integer	Number of days between the start date and the end date
+	 * @return	integer	Number of days between the Fecha de inicio and the Fecha final
 	 */
 	private static function _dateDiff360($startDay, $startMonth, $startYear, $endDay, $endMonth, $endYear, $methodUS) {
 		if ($startDay == 31) {
@@ -467,7 +467,7 @@ class PHPExcel_Calculation_DateTime {
 	 *
 	 * @access	public
 	 * @category Date/Time Functions
-	 * @param	string	$dateValue		Text that represents a date in a Microsoft Excel date format.
+	 * @param	string	$dateValue		Text that represents a date in a Microsoft Excel Formato de fecha.
 	 *									For example, "1/30/2008" or "30-Jan-2008" are text strings within
 	 *									quotation marks that represent dates. Using the default date
 	 *									system in Excel for Windows, date_text must represent a date from
@@ -731,7 +731,7 @@ class PHPExcel_Calculation_DateTime {
 	 *										TRUE: European method. Starting dates and ending dates that
 	 *										occur on the 31st of a month become equal to the 30th of the
 	 *										same month.
-	 * @return	integer		Number of days between start date and end date
+	 * @return	integer		Number of days between Fecha de inicio and Fecha final
 	 */
 	public static function DAYS360($startDate = 0, $endDate = 0, $method = false) {
 		$startDate	= PHPExcel_Calculation_Functions::flattenSingleValue($startDate);
@@ -884,15 +884,15 @@ class PHPExcel_Calculation_DateTime {
 	 * @return	integer			Interval between the dates
 	 */
 	public static function NETWORKDAYS($startDate,$endDate) {
-		//	Retrieve the mandatory start and end date that are referenced in the function definition
+		//	Retrieve the mandatory start and Fecha final that are referenced in the function definition
 		$startDate	= PHPExcel_Calculation_Functions::flattenSingleValue($startDate);
 		$endDate	= PHPExcel_Calculation_Functions::flattenSingleValue($endDate);
-		//	Flush the mandatory start and end date that are referenced in the function definition, and get the optional days
+		//	Flush the mandatory start and Fecha final that are referenced in the function definition, and get the optional days
 		$dateArgs = PHPExcel_Calculation_Functions::flattenArray(func_get_args());
 		array_shift($dateArgs);
 		array_shift($dateArgs);
 
-		//	Validate the start and end dates
+		//	Validate the start and Fecha finals
 		if (is_string($startDate = $sDate = self::_getDateValue($startDate))) {
 			return PHPExcel_Calculation_Functions::VALUE();
 		}
@@ -966,10 +966,10 @@ class PHPExcel_Calculation_DateTime {
 	 *						depending on the value of the ReturnDateType flag
 	 */
 	public static function WORKDAY($startDate,$endDays) {
-		//	Retrieve the mandatory start date and days that are referenced in the function definition
+		//	Retrieve the mandatory Fecha de inicio and days that are referenced in the function definition
 		$startDate	= PHPExcel_Calculation_Functions::flattenSingleValue($startDate);
 		$endDays	= PHPExcel_Calculation_Functions::flattenSingleValue($endDays);
-		//	Flush the mandatory start date and days that are referenced in the function definition, and get the optional days
+		//	Flush the mandatory Fecha de inicio and days that are referenced in the function definition, and get the optional days
 		$dateArgs = PHPExcel_Calculation_Functions::flattenArray(func_get_args());
 		array_shift($dateArgs);
 		array_shift($dateArgs);
@@ -984,7 +984,7 @@ class PHPExcel_Calculation_DateTime {
 
 		$decrementing = ($endDays < 0) ? True : False;
 
-		//	Adjust the start date if it falls over a weekend
+		//	Adjust the Fecha de inicio if it falls over a weekend
 
 		$startDoW = self::DAYOFWEEK($startDate,3);
 		if (self::DAYOFWEEK($startDate,3) >= 5) {
@@ -995,7 +995,7 @@ class PHPExcel_Calculation_DateTime {
 		//	Add endDays
 		$endDate = (float) $startDate + (intval($endDays / 5) * 7) + ($endDays % 5);
 
-		//	Adjust the calculated end date if it falls over a weekend
+		//	Adjust the calculated Fecha final if it falls over a weekend
 		$endDoW = self::DAYOFWEEK($endDate,3);
 		if ($endDoW >= 5) {
 			$endDate += ($decrementing) ? -$endDoW + 4: 7 - $endDoW;
@@ -1035,7 +1035,7 @@ class PHPExcel_Calculation_DateTime {
 						}
 					}
 				}
-				//	Adjust the calculated end date if it falls over a weekend
+				//	Adjust the calculated Fecha final if it falls over a weekend
 				$endDoW = self::DAYOFWEEK($endDate,3);
 				if ($endDoW >= 5) {
 					$endDate += ($decrementing) ? -$endDoW + 4: 7 - $endDoW;

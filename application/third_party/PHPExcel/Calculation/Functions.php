@@ -141,11 +141,11 @@ class PHPExcel_Calculation_Functions {
 
 
 	/**
-	 * Set the Return Date Format used by functions that return a date/time (Excel, PHP Serialized Numeric or PHP Object)
+	 * Set the Return Formato de fecha used by functions that return a date/time (Excel, PHP Serialized Numeric or PHP Object)
 	 *
 	 * @access	public
 	 * @category Function Configuration
-	 * @param	 string	$returnDateType			Return Date Format
+	 * @param	 string	$returnDateType			Return Formato de fecha
 	 *												Permitted values are:
 	 *													PHPExcel_Calculation_Functions::RETURNDATE_PHP_NUMERIC		'P'
 	 *													PHPExcel_Calculation_Functions::RETURNDATE_PHP_OBJECT		'O'
@@ -164,11 +164,11 @@ class PHPExcel_Calculation_Functions {
 
 
 	/**
-	 * Return the current Return Date Format for functions that return a date/time (Excel, PHP Serialized Numeric or PHP Object)
+	 * Return the current Return Formato de fecha for functions that return a date/time (Excel, PHP Serialized Numeric or PHP Object)
 	 *
 	 * @access	public
 	 * @category Function Configuration
-	 * @return	 string		Return Date Format
+	 * @return	 string		Return Formato de fecha
 	 *							Possible Return values are:
 	 *								PHPExcel_Calculation_Functions::RETURNDATE_PHP_NUMERIC		'P'
 	 *								PHPExcel_Calculation_Functions::RETURNDATE_PHP_OBJECT		'O'

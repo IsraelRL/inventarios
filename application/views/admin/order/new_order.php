@@ -17,11 +17,11 @@
             <div class="portlet"><!-- /primary heading -->
                 <div class="portlet-heading">
                     <h3 class="portlet-title text-dark text-uppercase">
-                        Shopping Cart
+                        Carrito de compras
                     </h3>
                     <div class="pull-right">
                         <h1 class="portlet-title text-dark text-uppercase">
-                            <a href="<?php echo site_url('admin/order/new_order')?>" class="btn btn-success btn-xs">Place New Order</a>
+                            <a href="<?php echo site_url('admin/order/new_order')?>" class="btn btn-success btn-xs">Hacer un nuevo pedido</a>
                             <a href="<?php echo site_url('admin/order/manage_invoice')?>" class="btn btn-xs btn-danger" ><i class="fa fa-times"></i></a>
 
                         </h1>
@@ -37,16 +37,16 @@
 
                                 <div class="box  box-warning">
                                     <div class="box-header box-header-background-light with-border">
-                                        <h3 class="box-title ">Select Producto</h3>
+                                        <h3 class="box-title ">Seleccione Producto</h3>
                                     </div>
 
 
                                     <div class="box-body order-panel">
 
                                         <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-                                            <li class="active"><a href="#product-list" data-toggle="tab">Shopping Cart</a>
+                                            <li class="active"><a href="#product-list" data-toggle="tab">Carrito de compras</a>
                                             </li>
-                                            <li><a href="#search-product" data-toggle="tab">Search Producto</a></li>
+                                            <li><a href="#search-product" data-toggle="tab">Búsqueda producto</a></li>
                                         </ul>
 
 
@@ -63,9 +63,9 @@
                                                         <form method="post" action="<?php echo base_url(); ?>admin/order/add_cart_item_by_barcode">
                                                             <div class="input-group">
                                                           <span class="input-group-btn">
-                                                            <button type="submit" class="btn bg-blue" type="button">Barcode</button>
+                                                            <button type="submit" class="btn bg-blue" type="button">Código de barras</button>
                                                           </span>
-                                                                <input type="text" name="barcode" class="form-control" placeholder="Scan Product Barcode">
+                                                                <input type="text" name="barcode" class="form-control" placeholder="Escanear el código de barras">
                                                             </div>
 
                                                         </form>
@@ -97,10 +97,10 @@
                                                         <thead><!-- Table head -->
                                                         <tr>
                                                             <th class="col-sm-1 active"><input type="checkbox" class="checkbox-inline" id="parent_present" /></th>
-                                                            <th class="active">Barcode</th>
+                                                            <th class="active">Código de barras</th>
                                                             <th class="active">Nombre del producto</th>
-                                                            <th class="active">Inventory</th>
-                                                            <th class="active col-md-1">Purchase</th>
+                                                            <th class="active">Inventario</th>
+                                                            <th class="active col-md-1">Compra</th>
 
                                                         </tr>
                                                         </thead>
@@ -177,7 +177,7 @@
 
                                 <div class="box">
                                     <div class="box-header with-border box-header-background">
-                                        <h3 class="box-title ">Order Summary</h3>
+                                        <h3 class="box-title ">Resumen del pedido</h3>
                                     </div>
 
                                     <div id="cart_summary">
@@ -248,7 +248,7 @@
             messages: {
 
                 product_name: {
-                    required: "Please enter Nombre del producto"
+                    required: "Introduzca Nombre del producto"
                 }
 
 
@@ -270,10 +270,10 @@ if( !empty($cart_msg))
             // options
             <?php if($cart_msg == 'add'){ ?>
             icon: 'glyphicon glyphicon-ok-sign',
-            message: '  Product add to cart successfully!'
+            message: '  Producto añadido a la cesta correctamente!'
             <?php }else{ ?>
             icon: 'glyphicon glyphicon-ok-sign',
-            message: '  Delete from cart successfully!'
+            message: '  Eliminado del carrito correctamente!'
             <?php } ?>
         },{
             // settings

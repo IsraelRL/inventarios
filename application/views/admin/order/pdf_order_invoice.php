@@ -67,7 +67,7 @@
         <tr>
             <td style="text-align: right; background-color: #f7f7f7">
 
-                <div><strong>Order Note:</strong></div>
+                <div><strong>Nota de pedido:</strong></div>
                 <?php echo $order_info->note ?>
 
             </td>

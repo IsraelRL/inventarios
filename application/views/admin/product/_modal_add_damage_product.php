@@ -14,12 +14,12 @@
 
 
     <div class="form-group">
-        <label for="exampleInputEmail1">Customer Name <span class="required">*</span></label>
-        <input name="customer_name" placeholder="Customer Name" value="" class="form-control" type="text">
+        <label for="exampleInputEmail1">Nombre del cliente <span class="required">*</span></label>
+        <input name="customer_name" placeholder="Nombre del cliente" value="" class="form-control" type="text">
     </div>
     <div class="form-group">
-        <label for="exampleInputEmail1">Customer Name <span class="required">*</span></label>
-        <input name="customer_name" placeholder="Customer Name" value="" class="form-control" type="text">
+        <label for="exampleInputEmail1">Nombre del cliente <span class="required">*</span></label>
+        <input name="customer_name" placeholder="Nombre del cliente" value="" class="form-control" type="text">
     </div>
 
     <div class="form-group">

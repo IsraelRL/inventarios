@@ -25,12 +25,12 @@
                             <thead ><!-- Table head -->
                             <tr>
                                 <th class="active">Sl</th>
-                                <th class="active">Invoice No.</th>
-                                <th class="active">Order No.</th>
-                                <th class="active">Invoice Date</th>
-                                <th class="active">Customer</th>
-                                <th class="active">Payment Method</th>
-                                <th class="active">Order Total</th>
+                                <th class="active">No. Factura</th>
+                                <th class="active">No. Orden</th>
+                                <th class="active">Fecha Factura</th>
+                                <th class="active">Cliente</th>
+                                <th class="active">Forma de pago</th>
+                                <th class="active">Total de la orden</th>
                                 <th class="active">Acción</th>
 
                             </tr>

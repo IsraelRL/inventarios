@@ -54,12 +54,12 @@ class Campaign extends Admin_Controller
         $this->global_model->save($data, $id);
         $this->message->save_success('admin/campaign/manage_campaign');
     }
-    /*** Manage Campaign ***/
+    /*** Administrar campaña ***/
     public function manage_campaign(){
         $this->tbl_campaign('campaign_id','desc');
         $data['campaign'] = $this->global_model->get();
 
-        $data['title'] = 'Manage Campaign';
+        $data['title'] = 'Administrar campaña';
         $data['subview'] = $this->load->view('admin/campaign/manage_campaign', $data, true);
         $this->load->view('admin/_layout_main', $data);
     }
@@ -89,7 +89,7 @@ class Campaign extends Admin_Controller
 
 
         if(empty($company_info->email) && empty($company_info->company_name)){
-            $this->message->custom_error_msg('admin/campaign/campaign_result', 'Your campaign email unable to send please set company email');
+            $this->message->custom_error_msg('admin/campaign/campaign_result', 'Your campaign email unable to send please set Email de la empresa');
         }
 
         $company_email = $company_info->email;

@@ -18,11 +18,11 @@ if (!defined('BASEPATH'))
 // ------------------------------------------------------------------------
 
 /**
- * Shopping Cart Class
+ * Carrito de comprasClass
  *
  * @package		CodeIgniter
  * @subpackage	Libraries
- * @category	Shopping Cart
+ * @category	Carrito de compras
  * @author		ExpressionEngine Dev Team
  * @link		http://codeigniter.com/user_guide/libraries/cart.html
  */

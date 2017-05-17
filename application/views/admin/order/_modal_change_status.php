@@ -1,18 +1,18 @@
 
 <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-    <h4 class="modal-title" id="myModalLabel">Change Status</h4>
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+    <h4 class="modal-title" id="myModalLabel">Cambiar Estado</h4>
 </div>
 <div class="modal-body wrap-modal wrap" style="max-height: 900px;">
 
     <form method="post" id="OrderForm" action="<?php echo site_url("admin/order/order_confirmation") ?>">
         <div class="well well-sm">
             <div class="form-group">
-                <label>Change Status</label>
+                <label>Cambiar Estado</label>
                 <select name="order_status" class="form-control" id="order_status">
-                    <option value="">Select Status</option>
-                    <option value="2">Confirm Order</option>
-                    <option value="1">Cancel Order</option>
+                    <option value="">Seleccione Estado</option>
+                    <option value="2">Confirmar pedido</option>
+                    <option value="1">Cancelar pedido</option>
                 </select>
             </div>
         </div>
@@ -22,14 +22,14 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label>Shipping Address</label>
+                        <label>Dirección de Envío</label>
                         <textarea name="shipping_address" rows="4" class="form-control"><?php echo $order->shipping_address ?></textarea>
                     </div>
                 </div>
 
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label>Order Note</label>
+                        <label>Nota de pedido</label>
                         <textarea name="note" rows="4" class="form-control"><?php echo $order->note ?></textarea>
                     </div>
                 </div>
@@ -43,17 +43,17 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <label>Payment Type</label>
+                        <label>Tipo de pago</label>
                        <select class="form-control" name="payment_method" id="payment_method">
-                            <option value="cash">Cash</option>
-                            <option value="card">Card</option>
+                            <option value="cash">Efectivo</option>
+                            <option value="card">Tarjeta</option>
                             <option value="cheque">cheque</option>
                        </select>
                     </div>
 
                     <div style="display: none" id="payment_ref">
                         <div class="form-group">
-                            <label>Payment Ref.</label>
+                            <label>Ref. de pago</label>
                             <input type="text" class="form-control" id="payment_ref" name="payment_ref">
                         </div>
                     </div>
@@ -66,7 +66,7 @@
 
         <table class="table table-bordered">
             <tr>
-                <td class="active"><strong>Grand Total</strong></td>
+                <td class="active"><strong>Total General</strong></td>
                 <td><strong><?php echo  number_format($order->grand_total,2)  ?></strong></td>
             </tr>
         </table>
@@ -75,7 +75,7 @@
         <input type="hidden" value="<?php echo $order->order_id  ?>" name="order_id">
         <input type="hidden" value="<?php echo $order->order_no  ?>" name="order_no">
 
-        <button type="submit" id="sbtn" class="btn-flat btn bg-olive btn-block"><strong>Save</strong></button>
+        <button type="submit" id="sbtn" class="btn-flat btn bg-olive btn-block"><strong>Guardar</strong></button>
 
     </form>
 

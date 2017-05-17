@@ -19,7 +19,7 @@
 
             <div class="box">
                 <div class="box-header box-header-background with-border">
-                    <h3 class="box-title">Git Inventarios | Create User Login</h3>
+                    <h3 class="box-title">Git Inventarios |Crear usuarioLogin</h3>
 
                 </div><!-- /.box-header -->
                 <div class="box-body">
@@ -36,7 +36,7 @@
                     <hr/>
                     <form class="form-horizontal" id="install_form" method="post" action="<?php echo base_url() ?>install/create_user/save_user">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-4 control-label">Name</label>
+                            <label for="inputEmail3" class="col-sm-4 control-label">Nombre</label>
                             <div class="col-sm-8">
                                 <input class="form-control" type="text" id="hostname" class="input_text" name="name" required>
                             </div>

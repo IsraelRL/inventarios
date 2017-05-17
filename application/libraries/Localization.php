@@ -153,11 +153,11 @@ class Localization
             $company_phone = 'Company Phone';
         }
 
-        //company email
+        //Email de la empresa
         if(!empty($info->email)){
             $company_email = $info->email;
         }else{
-            $company_email = 'Company Email';
+            $company_email = 'Email de la empresa';
         }
         //company address
         if(!empty($info->address)){

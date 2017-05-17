@@ -284,7 +284,7 @@ table tfoot tr td:first-child {
 
 <main class="invoice_report">
 
-    <h4>Sales Report from: <strong><?php echo $this->localization->dateFormat($start_date) ?></strong> to <strong><?php echo $this->localization->dateFormat($end_date) ?></strong></h4>
+    <h4>Reporte de ventas from: <strong><?php echo $this->localization->dateFormat($start_date) ?></strong> to <strong><?php echo $this->localization->dateFormat($end_date) ?></strong></h4>
     <br/>
     <br/>
 

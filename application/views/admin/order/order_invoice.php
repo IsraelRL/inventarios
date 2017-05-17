@@ -82,7 +82,7 @@
                         <tr>
                             <td>
 
-                                <div><strong>Order Note:</strong></div>
+                                <div><strong>Nota de pedido:</strong></div>
                                 <?php echo $order_info->note ?>
 
                             </td>

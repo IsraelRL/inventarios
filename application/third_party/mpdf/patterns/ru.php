@@ -3,7 +3,7 @@
 	Adapted from Hyphenator 1.0.2
 	http://code.google.com/p/hyphenator/
 	
-	Created by crymos at yandex dot ru
+	Creado por crymos at yandex dot ru
 	Вопросы по русскоязычным таблицам переноса отправлять на адрес.
 */
 

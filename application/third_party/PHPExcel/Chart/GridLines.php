@@ -1,7 +1,7 @@
 <?php
 require_once 'Properties.php';
 /**
- * Created by PhpStorm.
+ * Creado por PhpStorm.
  * User: Wiktor Trzonkowski
  * Date: 7/2/14
  * Time: 2:36 PM

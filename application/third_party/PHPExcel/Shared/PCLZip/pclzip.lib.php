@@ -4347,7 +4347,7 @@
       $v_month = ($p_header['mdate'] & 0x01E0) >> 5;
       $v_day = $p_header['mdate'] & 0x001F;
 
-      // ----- Get UNIX date format
+      // ----- Get UNIX Formato de fecha
       $p_header['mtime'] = @mktime($v_hour, $v_minute, $v_seconde, $v_month, $v_day, $v_year);
 
     }
@@ -4450,7 +4450,7 @@
       $v_month = ($p_header['mdate'] & 0x01E0) >> 5;
       $v_day = $p_header['mdate'] & 0x001F;
 
-      // ----- Get UNIX date format
+      // ----- Get UNIX Formato de fecha
       $p_header['mtime'] = @mktime($v_hour, $v_minute, $v_seconde, $v_month, $v_day, $v_year);
 
     }

@@ -100,7 +100,7 @@ if ( ! function_exists('mdate'))
 /**
  * Standard Date
  *
- * Returns a date formatted according to the submitted standard.
+ * Returns a Formato de fechated according to the submitted standard.
  *
  * @access	public
  * @param	string	the chosen format

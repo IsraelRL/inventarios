@@ -288,7 +288,7 @@ class PHPExcel_Shared_Date
 			return FALSE;
 		// Switch on formatcode
 		switch ($pFormatCode) {
-			//	Explicitly defined date formats
+			//	Explicitly defined Formato de fechas
 			case PHPExcel_Style_NumberFormat::FORMAT_DATE_YYYYMMDD:
 			case PHPExcel_Style_NumberFormat::FORMAT_DATE_YYYYMMDD2:
 			case PHPExcel_Style_NumberFormat::FORMAT_DATE_DDMMYYYY:
@@ -318,7 +318,7 @@ class PHPExcel_Shared_Date
 		if ((substr($pFormatCode,0,1) == '_') || (substr($pFormatCode,0,2) == '0 ')) {
 			return FALSE;
 		}
-		// Try checking for any of the date formatting characters that don't appear within square braces
+		// Try checking for any of the Formato de fechating characters that don't appear within square braces
 		if (preg_match('/(^|\])[^\[]*['.self::$possibleDateFormatCharacters.']/i',$pFormatCode)) {
 			//	We might also have a format mask containing quoted strings...
 			//		we don't want to test for any of our characters within the quoted blocks

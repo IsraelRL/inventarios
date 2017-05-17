@@ -68,11 +68,11 @@
                     <th class="active" colspan="2">Special Offer</th>
                 </tr>
                 <tr>
-                    <td class="col-sm-3">Offer Start Date</td>
+                    <td class="col-sm-3">Offer Fecha de inicio</td>
                     <td><?php echo $product->start_date ?></td>
                 </tr>
                 <tr>
-                    <td class="col-sm-3">Offer End Date</td>
+                    <td class="col-sm-3">Offer Fecha final</td>
                     <td><?php echo $product->end_date ?></td>
                 </tr>
                 <tr>

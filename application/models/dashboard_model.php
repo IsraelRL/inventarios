@@ -74,7 +74,7 @@ class Dashboard_Model extends MY_Model
         $result = $query_result->row();
         return $result;
     }
-    /***  create view yearly report by start date to end date  ***/
+    /***  create view yearly report by Fecha de inicio to Fecha final  ***/
     public function get_all_report_by_date($start_date, $end_date)
     {
         //Ingresos

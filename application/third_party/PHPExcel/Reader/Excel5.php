@@ -4292,7 +4292,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
 	}
 
 	/**
-	 * Read PLV Record(Created by Excel2007 or upper)
+	 * Read PLV Record(Creado por Excel2007 or upper)
 	 */
 	private function _readPageLayoutView(){
 		$length = self::_GetInt2d($this->_data, $this->_pos + 2);

@@ -10,7 +10,7 @@
 
             <div class="box box-primary ">
                 <div class="box-header box-header-background with-border">
-                        <h3 class="box-title ">Send Campaign List</h3>
+                        <h3 class="box-title ">Enviar lista de campaña</h3>
                 </div>
 
 
@@ -21,10 +21,10 @@
                             <thead ><!-- Table head -->
                             <tr>
                                 <th class="active">Sl</th>
-                                <th class="active">Campaign Name</th>
-                                <th class="active">Email Subject</th>
-                                <th class="active">Send Date</th>
-                                <th class="active ">Send by</th>
+                                <th class="active">Nombre de la campaña</th>
+                                <th class="active">Asunto del email</th>
+                                <th class="active">Fecha de envio</th>
+                                <th class="active ">Enviado por</th>
 
                             </tr>
                             </thead><!-- / Table head -->

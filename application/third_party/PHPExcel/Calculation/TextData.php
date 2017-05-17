@@ -189,7 +189,7 @@ class PHPExcel_Calculation_TextData {
 	/**
 	 * DOLLAR
 	 *
-	 * This function converts a number to text using currency format, with the decimals rounded to the specified place.
+	 * This function converts a number to text using Formato de la moneda, with the decimals rounded to the specified place.
 	 * The format used is $#,##0.00_);($#,##0.00)..
 	 *
 	 * @param	float	$value			The value to format

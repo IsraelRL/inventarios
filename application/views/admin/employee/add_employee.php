@@ -12,7 +12,7 @@
             <div class="box box-primary">
                 <div class="box-header box-header-background with-border">
 
-                    <h3 class="box-title">Create User</h3>
+                    <h3 class="box-title">Crear usuario</h3>
 
                 </div>
                 <!-- /.box-header -->
@@ -27,16 +27,16 @@
 
 
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Name <span class="required">*</span></label>
-                                    <input type="text" placeholder="First" name="name" class="form-control"
+                                    <label for="exampleInputEmail1">Nombre <span class="required">*</span></label>
+                                    <input type="text" placeholder="Nombre" name="name" class="form-control"
                                         value="<?php if(!empty($employee_login_details->name)){
                                             echo $employee_login_details->name;
                                         } ?>"
                                         >
                                 </div>
                                 <div class="form-group">
-                                    <label>Username <span class="required">*</span></label>
-                                    <input type="text" placeholder="Username" onchange="check_user_name(this.value)" name="user_name" class="form-control"
+                                    <label>Nombre de usuario <span class="required">*</span></label>
+                                    <input type="text" placeholder="Usuario" onchange="check_user_name(this.value)" name="user_name" class="form-control"
                                            value="<?php if(!empty($employee_login_details->user_name)){
                                                echo $employee_login_details->user_name;
                                            } ?>"
@@ -56,12 +56,12 @@
                                     echo 'display: none';
                                 } ?>">
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Password <span class="required">*</span></label>
-                                    <input type="password" placeholder="Password" id="password" name="password" class="form-control">
+                                    <label for="exampleInputPassword1">Contraseña <span class="required">*</span></label>
+                                    <input type="password" placeholder="Contraseña" id="password" name="password" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Confirm Password</label>
-                                    <input type="password" placeholder="Password" id="confirm_password" name="confirm_password"
+                                    <label for="exampleInputPassword1">Confirmar contraseña</label>
+                                    <input type="password" placeholder="contraseña" id="confirm_password" name="confirm_password"
                                            class="form-control">
                                 </div>
                                 </div>
@@ -75,7 +75,7 @@
                                 <?php endif; ?>
 
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">User Type</label>
+                                    <label for="exampleInputPassword1">Tipo de usuario</label>
                                     <select id="user_type" name="flag" class="form-control"
                                             <?php
                                             if(!empty($employee_login_details->flag)) {
@@ -105,7 +105,7 @@
 
                                 <!-- /.employee Image -->
                                 <div class="form-group">
-                                    <label>Employee Image</label>
+                                    <label>Imagen del Empleado</label>
                                 </div>
                                 <div class="form-group">
                                     <!-- hidden  old_path when update  -->
@@ -126,9 +126,9 @@
                                         <div>
                                                     <span class="btn btn-default btn-file">
                                                         <span class="fileinput-new"><input type="file" name="employee_image" /></span>
-                                                        <span class="fileinput-exists">Change</span>
+                                                        <span class="fileinput-exists">Cambiar</span>
                                                     </span>
-                                            <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                            <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remover</a>
                                         </div>
                                         <div id="valid_msg" class="required"></div>
                                     </div>
@@ -143,7 +143,7 @@
                         <div class="col-md-5 col-md-offset-1">
                             <div id="roll">
                                 <div class="box-body">
-                                    <h4>User Access Roll:</h4>
+                                    <h4>Rol de acceso al usuario :</h4>
                                     <div class="k-header">
                                         <div class="box-col">
                                             <div id="treeview"></div>
@@ -159,7 +159,7 @@
                     <input type="hidden" name="employee_id" id="employee_id" value="<?php echo $employee_id?>">
 
                     <div class="box-footer ">
-                        <button type="submit" id="sbtn" class="btn bg-navy btn-flat">Submit</button>
+                        <button type="submit" id="sbtn" class="btn bg-navy btn-flat">Enviar</button>
                     </div>
                 </form>
             </div>

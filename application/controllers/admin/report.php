@@ -23,10 +23,10 @@ class Report extends Admin_Controller
     }
 
 
-    /*** Sales Report ***/
+    /*** Reporte de ventas ***/
     public function sales_report()
     {
-        $data['title'] = 'View Sales Report';
+        $data['title'] = 'View Reporte de ventas';
 
         $start_date = $this->input->post('start_date', true);
         $end_date = $this->input->post('end_date', true);
@@ -50,7 +50,7 @@ class Report extends Admin_Controller
         $this->load->view('admin/_layout_main', $data);
     }
 
-    /*** Generate PDF Sales Report ***/
+    /*** Generate PDF Reporte de ventas ***/
     public function pdf_sales_report()
     {
         $start_date = $this->input->post('start_date', true);
@@ -93,10 +93,10 @@ class Report extends Admin_Controller
 
     }
 
-    /*** purchase Report ***/
+    /*** Informe de compras ***/
     public function purchase_report()
     {
-        $data['title'] = 'View Purchase Report';
+        $data['title'] = 'View Informe de compras';
 
         $start_date = $this->input->post('start_date', true);
         $end_date = $this->input->post('end_date', true);
@@ -122,7 +122,7 @@ class Report extends Admin_Controller
         $this->load->view('admin/_layout_main', $data);
     }
 
-    /*** PDF Purchase Report ***/
+    /*** PDF Informe de compras ***/
     public function pdf_purchase_report()
     {
         $start_date = $this->input->post('start_date', true);
@@ -163,7 +163,7 @@ class Report extends Admin_Controller
 
     function stock_report()
     {
-        $data['title'] = 'Stock Summary Report';
+        $data['title'] = 'Informe de resumen de existencias';
         $data['stock'] = $this->db->select('tbl_product.*, tbl_inventory.product_quantity, tbl_product_price.buying_price')
             ->from('tbl_product')
             ->join('tbl_inventory', 'tbl_inventory.product_id = tbl_product.product_id', 'left')
@@ -178,7 +178,7 @@ class Report extends Admin_Controller
 
     public function sales_summery_report()
     {
-        $data['title'] = 'Sales Summery Report';
+        $data['title'] = 'Informe de resumen de ventas';
 
         $start_date = $this->input->post('start_date', true);
         $end_date = $this->input->post('end_date', true);

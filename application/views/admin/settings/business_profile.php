@@ -8,7 +8,7 @@
 
             <div class="box box-primary">
                 <div class="box-header box-header-background with-border">
-                   <h3 class="box-title ">General Settings</h3>
+                   <h3 class="box-title ">Configuración general</h3>
                 </div>
                 <!-- /.box-header -->
 
@@ -37,11 +37,11 @@
                                            class="form-control">
                                 </div>
 
-                                <!-- /.Company Email -->
+                                <!-- /.Email de la empresa -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Company Email <span
+                                    <label for="exampleInputEmail1">Email de la empresa <span
                                             class="required">*</span></label>
-                                    <input type="text" placeholder="Company Email" name="email" required
+                                    <input type="text" placeholder="Email de la empresa" name="email" required
                                            value="<?php
                                            if (!empty($business_info->email)) {
                                                echo $business_info->email;
@@ -54,7 +54,7 @@
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Dirección <span class="required">*</span></label>
                                     <textarea name="address" class="form-control autogrow" id="field-ta" required
-                                              placeholder="Business Address"><?php
+                                              placeholder="Dirección de negocios "><?php
                                         if (!empty($business_info->address)) {
                                             echo $business_info->address;
                                         }
@@ -76,7 +76,7 @@
 
                                 <!-- /.Company Logo -->
                                 <div class="form-group">
-                                    <label>Company Logo</label>
+                                    <label>Logo de la compañía</label>
                                 </div>
                                 <div class="form-group"><!-- Company Logo -->
                                     <input type="hidden" name="old_path" value="<?php
@@ -114,7 +114,7 @@
                         </div>
                     </div>
                     <div class="box-footer">
-                        <button type="submit" class="btn bg-navy btn-flat" type="submit">Save Business Profile
+                        <button type="submit" class="btn bg-navy btn-flat" type="submit">Guardar perfil de negocios 
                         </button>
                     </div>
                 </form>

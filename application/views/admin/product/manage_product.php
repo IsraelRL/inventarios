@@ -47,7 +47,7 @@
                                 <th class="active">Nombre del producto</th>
                                 <th class="active">Categoría de producto</th>
                                 <th class="active">Stock disponible</th>
-                                <th class="active">Status</th>
+                                <th class="active">Estatus</th>
                                 <th class="active">Acción</th>
 
                             </tr>

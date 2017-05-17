@@ -10,7 +10,7 @@
 
             <div class="box box-primary ">
                 <div class="box-header box-header-background with-border">
-                        <h3 class="box-title ">Manage Customer</h3>
+                        <h3 class="box-title ">Administrar Cliente</h3>
                 </div>
 
 
@@ -21,11 +21,11 @@
                             <thead ><!-- Table head -->
                             <tr>
                                 <th class="active col-sm-1">Sl</th>
-                                <th class="active">Customer Code</th>
-                                <th class="active">Customer Name</th>
+                                <th class="active">Código Cliente</th>
+                                <th class="active">Nombre del cliente</th>
                                 <th class="active">Email</th>
                                 <th class="active">Teléfono</th>
-                                <th class="active">Discount</th>
+                                <th class="active">Descuento</th>
                                 <th class="active">Acción</th>
 
                             </tr>

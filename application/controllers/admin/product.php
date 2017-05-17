@@ -134,7 +134,7 @@ class Product extends Admin_Controller
         $data['all_sub_category'] = $this->product_model->get_all_sub_category();
         // view page
 
-        $data['title'] = 'Product Sub Category';
+        $data['title'] = 'Subcategoría del producto';
         $data['subview'] = $this->load->view('admin/product/subcategory', $data, true);
         $this->load->view('admin/_layout_main', $data);
     }

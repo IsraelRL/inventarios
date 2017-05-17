@@ -11,7 +11,7 @@
 
             <div class="box box-primary ">
                 <div class="box-header box-header-background with-border">
-                        <h3 class="box-title ">Manage Order</h3>
+                        <h3 class="box-title ">Administrar pedido</h3>
                 </div>
 
 
@@ -25,11 +25,11 @@
                             <thead ><!-- Table head -->
                             <tr>
                                 <th class="active">Sl</th>
-                                <th class="active">Order No</th>
-                                <th class="active">Order Date</th>
-                                <th class="active">Order Status</th>
-                                <th class="active">Order Total</th>
-                                <th class="active">Sales By</th>
+                                <th class="active">No de Orden</th>
+                                <th class="active">Fecha de orden</th>
+                                <th class="active">Estatus de la orden</th>
+                                <th class="active">Total de orden</th>
+                                <th class="active">Ventas por</th>
                                 <th class="active">Acción</th>
 
                             </tr>
@@ -63,24 +63,24 @@
 
                                         <div class="btn-group dropdown">
                                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                                More <span class="caret"></span>
+                                                Más <span class="caret"></span>
                                             </button>
 
                                             <ul class="dropdown-menu">
 
                                                 <li>
-                                                    <a href="<?php echo base_url()?>admin/order/view_order/<?php echo $v_order->order_no ?>"><i class="glyphicon glyphicon-search text-success"></i><span>View Order</span></a>
+                                                    <a href="<?php echo base_url()?>admin/order/view_order/<?php echo $v_order->order_no ?>"><i class="glyphicon glyphicon-search text-success"></i><span>Ver orden</span></a>
                                                 </li>
 
                                                 <?php if($v_order->order_status == 0){?>
                                                     <li>
-                                                        <a href="<?php echo base_url()?>admin/order/change_status/<?php echo $v_order->order_no ?>" data-target="#modalSmall" data-toggle="modal"><i class="glyphicon glyphicon-edit"></i><span>Change Status</span></a>
+                                                        <a href="<?php echo base_url()?>admin/order/change_status/<?php echo $v_order->order_no ?>" data-target="#modalSmall" data-toggle="modal"><i class="glyphicon glyphicon-edit"></i><span>Cambiar estatus</span></a>
                                                     </li>
                                                 <?php }?>
 
                                                 <?php if($v_order->order_status == 1 || $v_order->order_status == 0 ){?>
                                                     <li>
-                                                        <a onclick="return confirm('Are you sure want to delete this order');" href="<?php echo base_url()?>admin/order/delete_order/<?php echo $v_order->order_no ?>"><i class="fa fa-trash-o text-danger"></i><span class="text-danger">Delete</span></a>
+                                                        <a onclick="return confirm('Are you sure want to delete this order');" href="<?php echo base_url()?>admin/order/delete_order/<?php echo $v_order->order_no ?>"><i class="fa fa-trash-o text-danger"></i><span class="text-danger">Borrar</span></a>
                                                     </li>
                                                 <?php }?>
 

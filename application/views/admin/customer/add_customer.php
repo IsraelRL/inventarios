@@ -8,7 +8,7 @@
 
             <div class="box box-primary">
                 <div class="box-header box-header-background with-border">
-                        <h3 class="box-title ">Add Customer</h3>
+                        <h3 class="box-title ">Agregar cliente</h3>
                 </div>
                 <!-- /.box-header -->
 
@@ -28,7 +28,7 @@
                                 <!-- /.customer Code -->
                                 <?php if (!empty($customer->customer_code)) {?>
                                     <div class="form-group">
-                                        <label>Customer Id</label>
+                                        <label>Id del cliente</label>
                                         <input type="text"
                                                value="<?php echo $customer->customer_code ?>"
                                                class="form-control" disabled>
@@ -36,7 +36,7 @@
                                 <?php }else { ?>
 
                                     <div class="form-group">
-                                        <label>Customer Id<span class="required">*</span></label>
+                                        <label>Id del cliente<span class="required">*</span></label>
                                         <input type="text"
                                                value="<?php echo $code ?>"
                                                class="form-control" disabled>
@@ -44,10 +44,10 @@
 
                                 <?php } ?>
 
-                                <!-- /.customer Name -->
+                                <!-- /.Nombre del cliente -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Customer Name <span class="required">*</span></label>
-                                    <input type="text" name="customer_name" placeholder="Customer Name"
+                                    <label for="exampleInputEmail1">Nombre del cliente <span class="required">*</span></label>
+                                    <input type="text" name="customer_name" placeholder="Nombre del cliente"
                                            value="<?php
                                            if (!empty($customer->customer_name)) {
                                                echo $customer->customer_name;
@@ -56,7 +56,7 @@
                                            class="form-control">
                                 </div>
 
-                                <!-- /.Company Email -->
+                                <!-- /.Email de la empresa -->
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email <span
                                             class="required">*</span></label>
@@ -84,8 +84,8 @@
 
                                 <!-- /.Discount -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Discount %</label>
-                                    <input type="text" placeholder="Discount" name="discount"
+                                    <label for="exampleInputEmail1">Descuento %</label>
+                                    <input type="text" placeholder="Descuento" name="discount"
                                            value="<?php
                                            if (!empty($customer->discount)) {
                                                echo $customer->discount;
@@ -98,7 +98,7 @@
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Dirección <span class="required">*</span></label>
                                     <textarea name="address" class="form-control autogrow"
-                                              placeholder="Address" rows="5"><?php
+                                              placeholder="Dirección" rows="5"><?php
                                         if (!empty($customer->address)) {
                                             echo $customer->address;
                                         }
@@ -118,13 +118,13 @@
                                value="<?php echo $code ?>">
                     <?php }  ?>
 
-                    <!-- customer id -->
+                    <!-- Id del cliente -->
                     <input type="hidden" name="customer_id" value="<?php if (!empty($customer->customer_id)) {
                         echo $customer->customer_id;
                     } ?>" id="customer_id">
 
                     <div class="box-footer">
-                        <button type="submit" id="customer_btn" class="btn bg-navy btn-flat" type="submit">Add Customer
+                        <button type="submit" id="customer_btn" class="btn bg-navy btn-flat" type="submit">Agregar cliente
                         </button>
                     </div>
                 </form>

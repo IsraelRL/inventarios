@@ -12,7 +12,7 @@
             <div class="box box-primary">
                 <div class="box-header box-header-background with-border">
                     <div class="col-md-offset-3">
-                        <h3 class="box-title ">Purchase Report</h3>
+                        <h3 class="box-title ">Informe de compras</h3>
                     </div>
                 </div>
                 <!-- /.box-header -->
@@ -25,7 +25,7 @@
                             <div class="col-md-4 col-sm-12 col-xs-12 col-md-offset-3">
 
                                     <div class="form-group">
-                                        <label class="control-label">Start Date<span class="required"> *</span></label>
+                                        <label class="control-label">Fecha de inicio<span class="required"> *</span></label>
 
                                         <div class="input-group">
                                             <input type="text" value="" class="form-control datepicker" name="start_date" data-format="yyyy/mm/dd" required>
@@ -37,7 +37,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="control-label">End Date<span class="required"> *</span></label>
+                                        <label class="control-label">Fecha final<span class="required"> *</span></label>
                                         <div class="input-group">
                                             <input type="text" value="" class="form-control datepicker" name="end_date" data-format="yyyy/mm/dd" required>
 
@@ -47,7 +47,7 @@
                                         </div>
                                     </div>
 
-                                    <button type="submit" class="btn bg-navy btn-flat" type="submit">Generate Report
+                                    <button type="submit" class="btn bg-navy btn-flat" type="submit">Generar Reporte
                                     </button><br/><br/>
 
 
@@ -104,7 +104,7 @@
 
                                 <main class="invoice_report">
 
-                                    <h4>Purchase Report from: <strong><?php echo $this->localization->dateFormat($start_date) ?></strong> to <strong><?php echo $this->localization->dateFormat($end_date) ?></strong></h4>
+                                    <h4>Informe de compras from: <strong><?php echo $this->localization->dateFormat($start_date) ?></strong> to <strong><?php echo $this->localization->dateFormat($end_date) ?></strong></h4>
                                     <br/>
                                     <br/>
 

@@ -10,7 +10,7 @@
 
             <div class="box box-primary">
                 <div class="box-header box-header-background with-border">
-                        <h3 class="box-title ">Localisation Settings</h3>
+                        <h3 class="box-title ">Configuración de la localización</h3>
                 </div>
                 <!-- /.box-header -->
 
@@ -30,8 +30,8 @@
 
                                 <!-- /.Nombre de la empresa -->
                                 <div class="form-group">
-                                    <label>Timezone</label>
-                                    <select style="width: 100%;" title="Timezone" tabindex="-1" name="timezone" id="e2">
+                                    <label>Zona horaria</label>
+                                    <select style="width: 100%;" title="Zona horaria" tabindex="-1" name="timezone" id="e2">
                                         <?php foreach($timezoneList as $value => $label): ?>
                                             <option value="<?php echo $value ?>" <?php if(!empty($localization->timezone)) echo  $value == $localization->timezone ?'selected':''  ?> ><?php echo $label ?></option>
                                         <?php endforeach; ?>
@@ -39,9 +39,9 @@
                                 </div>
 
 
-                                <!-- /.Company Email -->
+                                <!-- /.Email de la empresa -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Default Country</label>
+                                    <label for="exampleInputEmail1">País predeterminado</label>
                                     <select id="country" style="width: 100%;" name="country" required>
                                         <option value="">Select Country</option>
                                         <?php  $country = $this->db->get('countries')->result(); ?>
@@ -59,7 +59,7 @@
 
                                 <!-- /.Address -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Date Format</label>
+                                    <label for="exampleInputEmail1">Formato de fecha</label>
                                     <select class="form-control" name="date_format" id="df">
                                         <option value="dd/mm/yyyy" <?php if(!empty($localization->date_format)) echo 'dd/mm/yyyy' == $localization->date_format ?'selected':'' ?> >20/07/2015</option>
                                         <option value="dd.mm.yyyy" <?php if(!empty($localization->date_format)) echo 'dd.mm.yyyy' == $localization->date_format ?'selected':'' ?>>20.07.2015</option>
@@ -76,7 +76,7 @@
 
                                 <!-- /.Phone -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Currency Format</label>
+                                    <label for="exampleInputEmail1">Formato de la moneda</label>
                                     <select class="form-control" name="currency_format" >
                                         <option value="1" <?php if(!empty($localization->currency_format)) echo '1' == $localization->currency_format ?'selected':'' ?>>
                                             1234.56
@@ -98,8 +98,8 @@
 
                                 <!-- /.Currency -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Currency</label>
-                                    <input type="text" placeholder="Currency" name="currency" required
+                                    <label for="exampleInputEmail1">Moneda</label>
+                                    <input type="text" placeholder="Moneda" name="currency" required
                                            value="<?php
                                            if (!empty($localization->currency)) {
                                                echo $localization->currency;
@@ -112,7 +112,7 @@
                         </div>
                     </div>
                     <div class="box-footer">
-                        <button type="submit" class="btn bg-navy btn-flat" type="submit">Save Localization
+                        <button type="submit" class="btn bg-navy btn-flat" type="submit">Guardar localización
                         </button>
                     </div>
                 </form>

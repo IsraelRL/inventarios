@@ -11,7 +11,8 @@
 
 
                 <div class="form-group">
-                    <label class="col-sm-5 control-label">Order No.</label>
+                    <label class="col-sm-5 control-label">No. de Orden
+                    </label>
 
                     <div class="col-sm-7">
                         <input type="text" value="<?php echo $this->session->userdata('order_no'); ?>" disabled class="form-control ">
@@ -31,10 +32,10 @@
 
                 <div class="input-group">
                       <span class="input-group-btn">
-                        <button type="submit" class="btn bg-blue" type="button" data-placement="top" data-toggle="tooltip">Customer</button>
+                        <button type="submit" class="btn bg-blue" type="button" data-placement="top" data-toggle="tooltip">Cliente</button>
                       </span>
                     <select id="customer" style="width: 100%;" name="customer" onchange="getCustomer(this)">
-                        <option value="">Select Customer</option>
+                        <option value="">Seleccione Cliente</option>
                         <?php  $customer = $this->db->get('tbl_customer')->result(); ?>
                         <?php if (!empty($customer)): ?>
                             <?php foreach ($customer as $item) : ?>
@@ -64,7 +65,7 @@
 
 
                        <div class="form-group">
-                            <label class="col-sm-5 control-label">Sub Tota</label>
+                            <label class="col-sm-5 control-label">Sub Total</label>
 
                             <div class="col-sm-7">
                                 <input type="text" value="<?php
@@ -82,7 +83,7 @@
                         <?php endforeach; endif ?>
 
                         <div class="form-group">
-                            <label class="col-sm-5 control-label">Tax</label>
+                            <label class="col-sm-5 control-label">Impuesto</label>
 
                             <div class="col-sm-7">
                                 <input type="text" value="<?php
@@ -96,7 +97,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="col-sm-5 control-label">Discount</label>
+                            <label class="col-sm-5 control-label">Descuento</label>
 
                             <div class="col-sm-7">
                                 <?php $discount = $this->session->userdata('discount') ?>
@@ -113,7 +114,7 @@
 
                         <?php if(!empty($discount)): ?>
                         <div class="form-group">
-                            <label class="col-sm-5 control-label">Discount Amount</label>
+                            <label class="col-sm-5 control-label">Importe de descuento</label>
 
                             <div class="col-sm-7">
                                 <?php
@@ -151,7 +152,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label" style="padding-top: 5px; font-size: 15px">Grand Total :</label>
+                        <label class="col-sm-4 control-label" style="padding-top: 5px; font-size: 15px">Total :</label>
 
                         <div class="col-sm-8">
                             <h2><?php
@@ -173,14 +174,14 @@
                     <div class="col-md-12">
 
                         <div class="form-group">
-                            <label class="col-sm-5 control-label">Payment Method</label>
+                            <label class="col-sm-5 control-label">Método de pago</label>
 
                             <div class="col-sm-7">
                                 <select name="payment_method" class="form-control" id="order_payment_type">
-                                    <option value="cash">Cash Payment</option>
-                                    <option value="cheque">Cheque Payment</option>
-                                    <option value="card">Credit Card</option>
-                                    <option value="pending">Pending Order</option>
+                                    <option value="cash">Pago en efectivo</option>
+                                    <option value="cheque">Pago de Cheques</option>
+                                    <option value="card">Tarjeta de crédito</option>
+                                    <option value="pending">Orden pendiente</option>
                                 </select>
                             </div>
                         </div>
@@ -189,7 +190,7 @@
                     <div class="col-md-12" style="display: none" id="payment">
 
                         <div class="form-group">
-                            <label class="col-sm-5 control-label">cheque/card Ref.</label>
+                            <label class="col-sm-5 control-label">Cheque / tarjeta Ref.</label>
 
                             <div class="col-sm-7">
                                 <input class="form-control" name="payment_ref">
@@ -199,28 +200,28 @@
 
                     <div class="col-md-12 order-panel"  id="shipping">
                             <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-                                <li class="active"><a href="#shipping_address" data-toggle="tab">Shipping</a></li>
-                                <li><a href="#note" data-toggle="tab">Order Note</a></li>
+                                <li class="active"><a href="#shipping_address" data-toggle="tab">Envío</a></li>
+                                <li><a href="#note" data-toggle="tab">Nota de pedido</a></li>
                             </ul>
                         <div id="my-tab-content" class="tab-content">
 
                             <!-- ***************  Cart Tab Start ****************** -->
                                 <div class="tab-pane active" id="shipping_address">
                                     <div class="form-group">
-                                        <label>Shipping Address</label>
+                                        <label>Dirección de Envío</label>
                                         <?php
                                                 $address = $this->session->userdata('address');
                                                 $breaks = array("<br />","<br>","<br/>");
                                                 $address = str_ireplace($breaks, "", $address);
                                         ?>
-                                        <textarea class="form-control" rows="4" name="shipping_address" placeholder="Enter ..." ><?php if(!empty($address)) echo $address ?></textarea>
+                                        <textarea class="form-control" rows="4" name="shipping_address" placeholder="Ingresar ..." ><?php if(!empty($address)) echo $address ?></textarea>
 
                                     </div>
                                 </div>
                                 <div class="tab-pane" id="note">
                                     <div class="form-group">
-                                        <label>Order Note</label>
-                                        <textarea class="form-control" name="note" rows="4" placeholder="Enter ..."></textarea>
+                                        <label>Nota de pedido</label>
+                                        <textarea class="form-control" name="note" rows="4" placeholder="Ingresar ..."></textarea>
 
                                     </div>
                                 </div>
@@ -237,7 +238,7 @@
         <div class="box-body">
             <div class="row">
                 <div class="col-md-12">
-                    <button type="submit" id="btn_order" class="btn bg-navy btn-block btn-flat " type="submit" <?php echo !empty($cart)?'':'disabled' ?>>Submit Order
+                    <button type="submit" id="btn_order" class="btn bg-navy btn-block btn-flat " type="submit" <?php echo !empty($cart)?'':'disabled' ?>>Enviar orden 
                     </button>
                 </div>
             </div>

@@ -268,7 +268,7 @@
                                     <div class="box">
                                         <div class="box-body">
 
-                                            <!-- /.Start Date -->
+                                            <!-- /.Fecha de inicio -->
                                             <div class="form-group form-group-bottom">
                                                 <label>Fecha de inicio</label>
                                             </div>
@@ -285,7 +285,7 @@
                                                 </div>
                                             </div>
 
-                                            <!-- /.End Date -->
+                                            <!-- /.Fecha final -->
                                             <div class="form-group form-group-bottom">
                                             <div class="form-group form-group-bottom">
                                                 <label >Fecha de termino</label>

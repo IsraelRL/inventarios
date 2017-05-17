@@ -10,7 +10,7 @@
 
             <div class="box box-primary ">
                 <div class="box-header box-header-background with-border">
-                        <h3 class="box-title ">Stock Summary Report</h3>
+                        <h3 class="box-title ">Informe de resumen de existencias</h3>
                 </div>
 
 
@@ -25,7 +25,7 @@
                                 <th class="active">Producto</th>
                                 <th class="active">Costo</th>
                                 <th class="active">Cantidad en mano</th>
-                                <th class="active">Stock Value</th>
+                                <th class="active">Valor en stock</th>
 
 
                             </tr>

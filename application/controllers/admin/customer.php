@@ -25,7 +25,7 @@ class Customer extends Admin_Controller
 
 
 
-    /*** Add Customer ***/
+    /*** Agregar cliente ***/
     public function add_customer($id = null)
     {
         $this->tbl_customer('customer_id');
@@ -46,7 +46,7 @@ class Customer extends Admin_Controller
         $lastId = $this->db->get('tbl_customer')->row()->customer_id;
         $data['code'] = $customerNo = 100 + $lastId + 1;
 
-        $data['title'] = 'Add Customer';  // title page
+        $data['title'] = 'Agregar cliente';  // title page
         $data['editor'] = $this->data;
         $data['subview'] = $this->load->view('admin/customer/add_customer', $data, true);
         $this->load->view('admin/_layout_main', $data);
@@ -82,13 +82,13 @@ class Customer extends Admin_Controller
         redirect('admin/customer/manage_customer');
     }
 
-    /*** Manage Customer ***/
+    /*** Administrar Cliente ***/
     public function manage_customer()
     {
 
         $this->tbl_customer('customer_id');
         $data['customer'] = $this->global_model->get();
-        $data['title'] = 'Manage Customer';
+        $data['title'] = 'Administrar Cliente';
         $data['subview'] = $this->load->view('admin/customer/manage_customer', $data, true);
         $this->load->view('admin/_layout_main', $data);
     }

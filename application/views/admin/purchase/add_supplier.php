@@ -49,7 +49,7 @@
                                            class="form-control">
                                 </div>
 
-                                <!-- /.Company Email -->
+                                <!-- /.Email de la empresa -->
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email <span
                                             class="required">*</span></label>

@@ -33,7 +33,7 @@
                                 <!-- /.tax title -->
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Titulo <span class="required">*</span></label>
-                                    <input type="text" required name="tax_title" placeholder="Title"
+                                    <input type="text" required name="tax_title" placeholder="Titulo"
                                            value="<?php
                                            if (!empty($tax->tax_title)) {
                                                echo $tax->tax_title;
@@ -44,8 +44,8 @@
 
                                 <!-- /.tax title -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Rate <span class="required">*</span></label>
-                                    <input type="text" required name="tax_rate" placeholder="Rate"
+                                    <label for="exampleInputEmail1">Tarifa <span class="required">*</span></label>
+                                    <input type="text" required name="tax_rate" placeholder="Tarifa"
                                            value="<?php
                                            if (!empty($tax->tax_rate)) {
                                                echo $tax->tax_rate;
@@ -56,9 +56,9 @@
 
                                 <!-- /.Tax type -->
                                 <div class="form-group">
-                                    <label>Tax Type <span class="required">*</span></label>
+                                    <label>Tipo de impuesto  <span class="required">*</span></label>
                                     <select name="tax_type" class="form-control col-sm-5">
-                                        <option value="">Select Tax Type</option>
+                                        <option value="">Selecciona el tipo de impuesto </option>
                                         <option value="1" <?php
                                         if(!empty($tax->tax_type)){
                                             echo $tax->tax_type==1 ?'selected':'';
@@ -83,7 +83,7 @@
                                     </select>
                                 </div><br/><br/>
 
-                                <button type="submit" class="btn bg-navy btn-flat" type="submit">Save Tax Rule
+                                <button type="submit" class="btn bg-navy btn-flat" type="submit">Guardar regla de impuestos
                                 </button>
                             <!-- /.box-body -->
 </br>
@@ -103,9 +103,9 @@
                     <thead>
                     <tr>
                         <th class="active">SL</th>
-                        <th class="active">Tax Name</th>
-                        <th class="active">Tax Rate</th>
-                        <th class="active">Tax Type</th>
+                        <th class="active">Nombre del impuestoe</th>
+                        <th class="active">Tarifa del impuesto</th>
+                        <th class="active">Tipo del impuesto</th>
                         <th class="col-sm-2 active">Acción</th>
 
                     </tr>

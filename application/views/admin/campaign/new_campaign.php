@@ -9,7 +9,7 @@
 
             <div class="box box-primary">
                 <div class="box-header box-header-background with-border">
-                        <h3 class="box-title ">Create New Email Campaign</h3>
+                        <h3 class="box-title ">Crear nueva campaña de correo electrónico</h3>
                 </div>
                 <!-- /.box-header -->
 
@@ -28,19 +28,19 @@
 
 
 
-                                <!-- /.campaign Name -->
+                                <!-- /.Nombre de la campaña -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Campaign Name <span class="required">*</span></label>
-                                    <input type="text" name="campaign_name" placeholder="Campaign Name" required
+                                    <label for="exampleInputEmail1">Nombre de la campaña <span class="required">*</span></label>
+                                    <input type="text" name="campaign_name" placeholder="Nombre de la campaña" required
                                             value="<?php if(!empty($campaign)) echo $campaign->campaign_name ?>"
                                            class="form-control">
                                 </div>
 
-                                <!-- /.Company Email -->
+                                <!-- /.Email de la empresa -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email Subject <span
+                                    <label for="exampleInputEmail1">Asunto del Email <span
                                             class="required">*</span></label>
-                                    <input type="text" placeholder="Email Subject" name="subject" required
+                                    <input type="text" placeholder="Asunto del email" name="subject" required
                                            value="<?php if(!empty($campaign)) echo $campaign->subject ?>"
                                            class="form-control">
                                 </div>
@@ -49,7 +49,7 @@
 
                                 <!-- /.Address -->
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email Body<span class="required">*</span></label>
+                                    <label for="exampleInputEmail1">Cuerpo del email<span class="required">*</span></label>
                                     <textarea name="email_body" class="form-control autogrow" required>
                                         <?php if(!empty($campaign)) echo $campaign->email_body ?>
                                     </textarea>
@@ -65,7 +65,7 @@
 
 
                     <div class="box-footer">
-                        <button type="submit" id="customer_btn" class="btn bg-navy btn-flat" type="submit">Create Campaign
+                        <button type="submit" id="customer_btn" class="btn bg-navy btn-flat" type="submit">Crear Campaña
                         </button>
                     </div>
                 </form>

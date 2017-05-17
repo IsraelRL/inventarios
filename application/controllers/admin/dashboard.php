@@ -64,7 +64,7 @@ class Dashboard extends Admin_Controller
         //get this year sales
         $data['yearly_sale'] = $this->dashboard_model->get_yearly_sales();
 
-        //weekly Sales Report
+        //weekly Reporte de ventas
         $data['weekly_sales'] = $this->dashboard_model->get_weekly_sales();
 
 
@@ -101,7 +101,7 @@ class Dashboard extends Admin_Controller
 
         $data['quantity_sales'] = count($invoiceList);
 
-        //stock value
+        //Valor en stock
         $stock = $this->dashboard_model->get_all_stock();
 
         //store

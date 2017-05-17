@@ -441,10 +441,10 @@ class Order extends Admin_Controller
         $this->load->view('admin/_layout_main', $data);
     }
 
-    /*** Manage Order ***/
+    /*** Administrar pedido ***/
     public function manage_order(){
         $data['order'] = $this->order_model->get_all_order();
-        $data['title'] = 'Manage Order';
+        $data['title'] = 'Administrar pedido';
         $data['subview'] = $this->load->view('admin/order/manage_order', $data, true);
         $this->load->view('admin/_layout_main', $data);
     }
@@ -701,7 +701,7 @@ class Order extends Admin_Controller
             }
         }else{
                  $this->message->custom_error_msg('admin/order/order_invoice/' . $id,
-                'Sorry unable to send your email, without company email');
+                'Sorry unable to send your email, without Email de la empresa');
         }
 
     }

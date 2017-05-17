@@ -131,7 +131,7 @@ class Settings extends Admin_Controller
 
 
     public function localisation(){
-        $data['title'] = 'Localisation Settings';
+        $data['title'] = 'Configuración de la localización';
 
         $data['localization']   = $this->db->get_where('tbl_localization', array(
             'localization_id' => 1
