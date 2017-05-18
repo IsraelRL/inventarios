@@ -3,7 +3,7 @@
 if (!defined('BASEPATH')) {
     exit('No direct script access allowed');
 }
-
+error_reporting(E_ALL); ini_set('display_errors', 1);
 /*
  *	@author : CodesLab
  *  @support: support@codeslab.net
@@ -283,6 +283,7 @@ class Product extends Admin_Controller
     }
 
 
+
     /*** Add New or Update Attribute Group ***/
     public function save_product($id = null)
     {
@@ -311,7 +312,7 @@ class Product extends Admin_Controller
             'product_note',
             'subcategory_id',
             'tax_id',
-            'product_code',
+            'product_code'
              ));
 
         $this->tbl_product('product_id');
