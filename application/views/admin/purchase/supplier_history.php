@@ -57,11 +57,11 @@ if(!empty($info->currency))
                             <thead ><!-- Table head -->
                             <tr>
                                 <th class="active">Sl</th>
-                                <th class="active">Invoice No.</th>
+                                <th class="active">No. factura</th>
                                 <th class="active">Nombre del proveedor</th>
-                                <th class="active">Purchase Date</th>
-                                <th class="active">Grand Total</th>
-                                <th class="active">Purchase By</th>
+                                <th class="active">Fecha de compra</th>
+                                <th class="active">Total</th>
+                                <th class="active">Comprar por</th>
                                 <th class="active">Acción</th>
 
                             </tr>

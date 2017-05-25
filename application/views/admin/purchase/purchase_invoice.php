@@ -25,7 +25,7 @@
                 <main >
                     <div id="details" class="clearfix">
                         <div id="client">
-                            <div class="to">SUPPLIER:</div>
+                            <div class="to">PROVEEDOR:</div>
                             <h2 class="name"><?php echo $purchase->company_name ?></h2>
                             <div class="address"><?php echo $purchase->address ?></div>
                             <div class="address"><?php echo $purchase->phone ?></div>
@@ -45,10 +45,10 @@
                         <thead>
                         <tr>
                             <th class="no text-right">#</th>
-                            <th class="desc">DESCRIPTION</th>
+                            <th class="desc">Descripción</th>
                             <th class="unit text-right">Precio Unitario</th>
-                            <th class="qty text-right">QUANTITY</th>
-                            <th class="total text-right ">TOTAL</th>
+                            <th class="qty text-right">Cantidad</th>
+                            <th class="total text-right ">Total</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -67,7 +67,7 @@
                         <tfoot>
                         <tr>
                             <td colspan="2"></td>
-                            <td colspan="2">SUBTOTAL</td>
+                            <td colspan="2">Subtotal</td>
                             <td><?php echo $this->localization->currencyFormat($purchase->grand_total) ?></td>
                         </tr>
                         <tr>
@@ -75,7 +75,7 @@
                         </tr>
                         <tr>
                             <td colspan="2"></td>
-                            <td colspan="2">GRAND TOTAL</td>
+                            <td colspan="2">Total</td>
                             <td><?php echo $this->localization->currencyFormat($purchase->grand_total) ?></td>
                         </tr>
                         </tfoot>

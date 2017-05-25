@@ -42,7 +42,7 @@ select {
 <br /><br />
 
 <b>Input Password</b>
-<input type="password" size="40" name="password" value="mysecretpassword" title="This field is set to act as a password field." > 
+<input type="password" size="40" name="password" value="mysecretpassword" title="Este campo está configurado para actuar como un campo de contraseña." > 
 <br /><br />
 
 <b>Calculations</b>

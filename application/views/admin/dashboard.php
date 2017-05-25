@@ -357,7 +357,7 @@
             ],
             xkey: 'x',
             ykeys: ['a', 'b', 'c'],
-            labels: ['Ingresos', 'Utilidades', 'Purchase'],
+            labels: ['Ingresos', 'Utilidades', 'Compra'],
             barColors: ['#3bc0c3', '#1a2942', '#5F5AAB']
         });
 

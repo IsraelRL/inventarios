@@ -20,7 +20,7 @@ if(!empty($info->currency))
 
             <div class="box box-primary ">
                 <div class="box-header box-header-background with-border">
-                        <h3 class="box-title ">Pending Order</h3>
+                        <h3 class="box-title ">Orden pendiente</h3>
                 </div>
 
 
@@ -31,11 +31,11 @@ if(!empty($info->currency))
                             <thead ><!-- Table head -->
                             <tr>
                                 <th class="active">Sl</th>
-                                <th class="active">Order No</th>
-                                <th class="active">Order Date</th>
-                                <th class="active">Order Status</th>
-                                <th class="active">Order Total</th>
-                                <th class="active">Sales By</th>
+                                <th class="active">Orden No.</th>
+                                <th class="active">Fecha de orden</th>
+                                <th class="active">Estado del pedido</th>
+                                <th class="active">Total del pedido</th>
+                                <th class="active">Ventas por</th>
                                 <th class="active">Acción</th>
 
                             </tr>
@@ -54,7 +54,7 @@ if(!empty($info->currency))
                                     <td class="vertical-td">
                                         <?php
                                           if($v_order->order_status == 0){
-                                              echo 'Pending Order';
+                                              echo 'Orden pendiente';
                                           }elseif($v_order->order_status == 1){
                                               echo 'Cancel Order';
                                         }else{

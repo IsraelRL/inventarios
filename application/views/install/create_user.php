@@ -66,7 +66,7 @@
 
                         <div class="form-group last">
                             <div class="col-sm-offset-4 col-sm-8">
-                                <button type="submit" class="btn bg-navy btn-flat" id="submit">Create User</button>
+                                <button type="submit" class="btn bg-navy btn-flat" id="submit">Crear usuario</button>
                             </div>
                         </div>
                     </form>

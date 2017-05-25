@@ -48,7 +48,7 @@
                                     <td class="vertical-td">
                                         <?php
                                           if($v_order->order_status == 0){
-                                              echo '<span class="label label-warning">Pending Order</span>';
+                                              echo '<span class="label label-warning">Orden pendiente</span>';
                                           }elseif($v_order->order_status == 1){
                                               echo '<span class="label label-danger">Cancel Order</span>';
                                         }else{

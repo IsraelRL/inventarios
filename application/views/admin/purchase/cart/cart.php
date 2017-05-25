@@ -50,7 +50,7 @@
         ?><!--get all sub category if not this empty-->
         <tr>
             <td colspan="3" class="text-right active">
-                <strong>Grand Total: </strong>
+                <strong>Total: </strong>
             </td>
             <td colspan="3" class="text-left active">
                <strong> <?php echo $this->cart->format_number($this->cart->total()); ?></strong>
@@ -59,7 +59,7 @@
 
         <tr>
             <td colspan="3" class="text-right active">
-                <strong>Purchase Reference</strong>
+                <strong>Referencia de compra</strong>
             </td>
             <td colspan="3" class="text-left active">
                 <input type="text" name="purchase_ref" class="form-control">
@@ -68,19 +68,19 @@
 
         <tr>
             <td colspan="3" class="text-right active">
-                <strong>Payment Method </strong>
+                <strong>Método de pago </strong>
             </td>
             <td colspan="3" class="text-left active">
                 <select name="payment_method" class="form-control" id="payment_type">
-                    <option value="cash">Cash Payment</option>
-                    <option value="cheque">Cheque Payment</option>
-                    <option value="card">Credit Card</option>
+                    <option value="cash">Pago en efectivo</option>
+                    <option value="cheque">Pago en cheques</option>
+                    <option value="card">Tarjeta de crédito</option>
                 </select>
             </td>
         </tr>
        <tr class="" id="payment" style="display:none">
            <td colspan="3" class="text-right active">
-               <strong>Payment Reference(cheque/card)</strong>
+               <strong>Referencia de pago (cheque / tarjeta)</strong>
            </td>
            <td colspan="3" class="text-left active">
               <input type="text" name="payment_ref" class="form-control" >

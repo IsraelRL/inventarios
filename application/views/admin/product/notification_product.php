@@ -12,7 +12,7 @@
             <div class="box box-primary">
                 <div class="box-header box-header-background with-border">
 
-                        <h3 class="box-title ">Notification Producto</h3>
+                        <h3 class="box-title ">Notificación de producto</h3>
 
                 </div>
 
@@ -23,8 +23,8 @@
                         <table class="table table-bordered table-striped" id="dataTables-example">
                             <thead ><!-- Table head -->
                             <tr>
-                                <th class="active">Image</th>
-                                <th class="active">Code</th>
+                                <th class="active">Imagen</th>
+                                <th class="active">Código</th>
                                 <th class="active">Nombre del producto</th>
                                 <th class="active">Stock disponible</th>
                                 <th class="active">Acción</th>

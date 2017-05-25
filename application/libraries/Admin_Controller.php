@@ -102,7 +102,7 @@ class Admin_Controller extends MY_Controller
             $_SESSION["notify_product"]=null;
         }
 
-        //Pending Order
+        //Orden pendiente
         $this->global_model->_table_name = 'tbl_order';
         $this->global_model->_order_by = 'order_id';
         $pending_order = $this->global_model->get_by(array("order_status"=> 0), false);

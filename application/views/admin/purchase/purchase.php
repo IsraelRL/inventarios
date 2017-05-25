@@ -80,7 +80,7 @@ if(!empty($info->currency))
                                             <td class="vertical-td " >
                                                 <form action="<?php echo base_url(); ?>admin/purchase/add_cart_item" method="post">
                                                     <input type="hidden" name="product_id" value="<?php echo $v_product->product_id ?>">
-                                                    <button type="submit" class="btn btn-primary btn-xs" title="Purchase" data-toggle="tooltip" data-placement="top"><i class="fa fa-shopping-cart"></i></button>
+                                                    <button type="submit" class="btn btn-primary btn-xs" title="Comprar" data-toggle="tooltip" data-placement="top"><i class="fa fa-shopping-cart"></i></button>
 
                                                 </form>
 

@@ -42,7 +42,7 @@
                             <!-- cancel Order-->
                             <div class="date">Order Status: <?php echo '<span class="label label-danger">Cancel Order</span>' ?></div>
                         <?php } elseif($order_info->order_status == 0){ ?>
-                            <div class="date">Order Status: <?php echo '<span class="label label-warning">Pending Order</span>' ?></div>
+                            <div class="date">Order Status: <?php echo '<span class="label label-warning">Orden pendiente</span>' ?></div>
                           <?php } else{ ?>
                             <!-- confirm Order-->
                             <div class="date">Order Status: <?php echo '<span class="label label-primary">Confirm Order</span>' ?></div>

@@ -240,9 +240,9 @@ footer {
         <div id="invoice">
             <h1>INVOICE <?php echo $purchase->purchase_order_number ?></h1>
             <div class="date">Date of Invoice: <?php echo $this->localization->dateFormat($purchase->datetime ) ?></div>
-            <div class="date">Purchase by: <?php echo $purchase->purchase_by ?></div>
+            <div class="date">Compra por: <?php echo $purchase->purchase_by ?></div>
             <?php if(!empty($purchase->purchase_ref)){?>
-                <div class="date">Purchase Ref: <?php echo $purchase->purchase_ref ?></div>
+                <div class="date">Ref. de compra: <?php echo $purchase->purchase_ref ?></div>
             <?php }?>
 
         </div>
@@ -251,10 +251,10 @@ footer {
         <thead>
         <tr>
             <th class="no">#</th>
-            <th class="desc">DESCRIPTION</th>
+            <th class="desc">Descripción</th>
             <th class="unit" style="text-align: right">Precio Unitario</th>
-            <th class="qty" style="text-align: right">QUANTITY</th>
-            <th class="total" style="text-align: right">TOTAL</th>
+            <th class="qty" style="text-align: right">Cantidad</th>
+            <th class="total" style="text-align: right">Total</th>
         </tr>
         </thead>
         <tbody>
@@ -273,13 +273,13 @@ footer {
         <tfoot>
         <tr>
             <td colspan="2"></td>
-            <td colspan="2">SUBTOTAL</td>
+            <td colspan="2">Subtotal</td>
             <td><?php echo $this->localization->currencyFormat($purchase->grand_total) ?></td>
         </tr>
 
         <tr>
             <td colspan="2"></td>
-            <td colspan="2">GRAND TOTAL</td>
+            <td colspan="2">Total</td>
             <td><?php echo $this->localization->currencyFormat($purchase->grand_total) ?></td>
         </tr>
         </tfoot>

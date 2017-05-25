@@ -449,9 +449,9 @@ class Order extends Admin_Controller
         $this->load->view('admin/_layout_main', $data);
     }
 
-    /*** Pending Order ***/
+    /*** Orden pendiente ***/
     public function pending_order(){
-        $data['title'] = 'Pending Order';
+        $data['title'] = 'Orden pendiente';
         $data['subview'] = $this->load->view('admin/order/pending_order', $data, true);
         $this->load->view('admin/_layout_main', $data);
     }

@@ -113,7 +113,7 @@
                                     echo '0';
                                 }
                                 ?>
-                                Product are running out of stock</li>
+                                El producto se está agotando</li>
                             <li>
                                 <!-- inner menu: contains the actual data -->
                                 <ul class="menu">
@@ -145,7 +145,7 @@
 
                                 </ul>
                             </li>
-                            <li class="footer"><a href="<?php echo base_url() ?>admin/product/notification_product">See All Notification</a></li>
+                            <li class="footer"><a href="<?php echo base_url() ?>admin/product/notification_product">Ver todas las notificaciones</a></li>
                         </ul>
                     </li>
 
@@ -160,7 +160,7 @@
                             <span class="label label-warning"><?php echo $pending_order_count ?></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li class="header"><?php echo $pending_order_count ?> Pending Order</li>
+                            <li class="header"><?php echo $pending_order_count ?> Orden pendiente</li>
                             <li>
                                 <!-- inner menu: contains the actual data -->
                                 <ul class="menu">
@@ -183,7 +183,7 @@
 
                                 </ul>
                             </li>
-                            <li class="footer"><a href="<?php echo base_url() ?>admin/order/pending_order">See All Pending Order</a></li>
+                            <li class="footer"><a href="<?php echo base_url() ?>admin/order/pending_order">Ver todas las Ordenes pendientes</a></li>
                         </ul>
                     </li>
 
