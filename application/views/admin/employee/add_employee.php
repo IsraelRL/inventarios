@@ -359,20 +359,20 @@
                 },
                 messages: {
                     user_name: {
-                        required: "Please enter a username",
-                        minlength: "Your username must consist of at least 4 characters"
+                        required: "Por favor, ingrese un nombre de usuario",
+                        minlength: "Su nombre de usuario debe constar de al menos 4 caracteres"
                     },
                     password: {
-                        required: "Please provide a password",
-                        minlength: "Your password must be at least 6 characters long"
+                        required: "Proporcione una contraseña",
+                        minlength: "Su contraseña debe tener al menos 6 caracteres"
                     },
 
                     email: {
-                        required: "Please enter a valid email address"
+                        required: "Por favor, introduce una dirección de correo electrónico válida"
                     },
 
                     name: {
-                        required: "Please enter your Name"
+                        required: "Por favor, escriba su nombre"
                     }
 
 
